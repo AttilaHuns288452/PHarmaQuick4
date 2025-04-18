@@ -118,26 +118,52 @@ document.addEventListener('DOMContentLoaded', function() {
     let cart = JSON.parse(localStorage.getItem('pharmaquickCart')) || [];
     
 
+
     const addToCartButtons = document.querySelectorAll('.btn-cart');
     console.log("Found add to cart buttons:", addToCartButtons.length);
     
     if (addToCartButtons.length > 0) {
         addToCartButtons.forEach(button => {
-     
+ 
             button.removeEventListener('click', handleAddToCart);
 
             button.addEventListener('click', handleAddToCart);
+            
+
+            if (button.hasAttribute('onclick')) {
+ 
+                const onclickAttr = button.getAttribute('onclick');
+                const match = onclickAttr.match(/\d+/);
+                if (match) {
+                    const productId = parseInt(match[0]);
+
+                    button.setAttribute('data-product-id', productId);
+                }
+
+                button.removeAttribute('onclick');
+            }
         });
     }
     
     function handleAddToCart(e) {
         e.preventDefault();
+
+        const productId = this.hasAttribute('data-product-id') ? 
+            parseInt(this.getAttribute('data-product-id')) : null;
+            
+        if (productId) {
+            console.log("Adding product to cart from data attribute:", productId);
+            addToCart(productId);
+            return;
+        }
+        
+
         const onclickAttr = this.getAttribute('onclick');
         if (onclickAttr) {
             const match = onclickAttr.match(/\d+/);
             if (match) {
                 const productId = parseInt(match[0]);
-                console.log("Adding product to cart:", productId);
+                console.log("Adding product to cart from onclick:", productId);
                 addToCart(productId);
             }
         }
