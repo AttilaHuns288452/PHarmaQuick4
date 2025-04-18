@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Kit - PharmaQuick</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="logo">
+            <img src="logo1.png" alt="PharmaQuick Logo" class="site-logo">
+            <div class="logo-text">
+                <h1>PharmaQuick</h1>
+                <p>Your OTC Medicine Guide</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="health-tips.html">Health Tips</a></li>
+                <li><a href="drug-guide.html">Drug Guide</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-icons">
+            <a href="cart.html" class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count" id="cartCount">0</span>
+            </a>
+            <a href="login.html" class="user-icon">
+                <i class="fas fa-user"></i>
+            </a>
+        </div>
+    </div>
+</header>
+
+<section class="product-details">
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> &gt; <a href="products.html">Products</a> &gt; Emergency Kit
+        </div>
+        
+        <div class="product-detail-content">
+            <div class="product-image-large">
+                <img src="Emergency Kit.avif" alt="Emergency Kit">
+            </div>
+            
+            <div class="product-info-detailed">
+                <h2>Emergency First Aid Kit</h2>
+                <p class="category">Tools, First Aid</p>
+                
+                <div class="product-price">
+                    <span class="price">₱850.00</span>
+                    <span class="original-price">₱950.00</span>
+                </div>
+                
+                <div class="product-section">
+                    <p>A comprehensive emergency kit containing essential medical supplies for treating minor injuries and providing initial care during emergencies. Ideal for homes, offices, schools, and travel.</p>
+                </div>
+                
+                <div class="product-quantity">
+                    <label for="quantity">Quantity:</label>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn decrease">-</button>
+                        <input type="number" id="quantity" value="1" min="1" max="99" class="quantity-input">
+                        <button class="quantity-btn increase">+</button>
+                    </div>
+                </div>
+                
+                <div class="product-actions">
+                    <button class="btn" id="addToCartBtn">Add to Cart</button>
+                    <button class="btn btn-secondary" id="buyNowBtn" style="background-color: var(--success-color); border: none;">Buy Now</button>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Description</h3>
+                    <p>Our Emergency First Aid Kit is designed to help you respond quickly and effectively to a variety of emergency situations. This compact yet comprehensive kit contains essential medical supplies for treating minor injuries and providing initial care during emergencies. The durable, water-resistant case keeps all supplies organized and protected, making it easy to find what you need in urgent situations. Every household, workplace, and vehicle should have an emergency kit readily available for unexpected situations.</p>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Kit Contents</h3>
+                    <ul>
+                        <li><strong>Bandages and Dressings:</strong>
+                            <ul>
+                                <li>Adhesive bandages (assorted sizes) - 30 pcs</li>
+                                <li>Sterile gauze pads (2" x 2") - 10 pcs</li>
+                                <li>Sterile gauze pads (4" x 4") - 5 pcs</li>
+                                <li>Conforming bandage roll (2") - 2 rolls</li>
+                                <li>Adhesive tape roll - 1 pc</li>
+                                <li>Triangular bandage - 2 pcs</li>
+                            </ul>
+                        </li>
+                        <li><strong>Wound Care:</strong>
+                            <ul>
+                                <li>Antiseptic wipes - 10 pcs</li>
+                                <li>Alcohol prep pads - 10 pcs</li>
+                                <li>Povidone-iodine swabs - 5 pcs</li>
+                                <li>Antibiotic ointment packets - 5 pcs</li>
+                            </ul>
+                        </li>
+                        <li><strong>Tools and Equipment:</strong>
+                            <ul>
+                                <li>Disposable gloves (pairs) - 4 pcs</li>
+                                <li>Scissors - 1 pc</li>
+                                <li>Tweezers - 1 pc</li>
+                                <li>Digital thermometer - 1 pc</li>
+                                <li>Emergency blanket - 1 pc</li>
+                                <li>CPR face shield - 1 pc</li>
+                                <li>Instant cold pack - 2 pcs</li>
+                            </ul>
+                        </li>
+                        <li><strong>Medications:</strong>
+                            <ul>
+                                <li>Paracetamol tablets - 10 pcs</li>
+                                <li>Antihistamine tablets - 10 pcs</li>
+                                <li>Antacid tablets - 10 pcs</li>
+                            </ul>
+                        </li>
+                        <li><strong>Additional Items:</strong>
+                            <ul>
+                                <li>First aid guide - 1 pc</li>
+                                <li>Emergency contact card - 1 pc</li>
+                                <li>Whistle - 1 pc</li>
+                                <li>Small flashlight with batteries - 1 pc</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Features</h3>
+                    <ul>
+                        <li>Compact, portable design with carrying handle</li>
+                        <li>Water-resistant, durable case</li>
+                        <li>Clear internal organization with labeled compartments</li>
+                        <li>Comprehensive selection of first aid supplies</li>
+                        <li>Easy-to-follow first aid guide included</li>
+                        <li>Essential for homes, offices, schools, and vehicles</li>
+                        <li>Meets basic emergency preparedness recommendations</li>
+                    </ul>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Usage Guidelines</h3>
+                    <ul>
+                        <li>Keep the emergency kit in an easily accessible location</li>
+                        <li>Familiarize yourself with the contents before an emergency occurs</li>
+                        <li>Check the kit regularly to ensure supplies are not expired or depleted</li>
+                        <li>Replace used items promptly to maintain kit readiness</li>
+                        <li>For serious injuries or medical emergencies, seek professional medical help immediately</li>
+                        <li>The kit is designed for initial response and basic first aid only</li>
+                    </ul>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Emergency Preparedness Tips</h3>
+                    <ul>
+                        <li>Keep emergency contact numbers readily available</li>
+                        <li>Learn basic first aid and CPR techniques</li>
+                        <li>Create an emergency plan for your household or workplace</li>
+                        <li>Designate meeting points in case of evacuation</li>
+                        <li>Store additional emergency supplies such as water, non-perishable food, and batteries</li>
+                        <li>Consider specific needs (medications, baby supplies, pet supplies) when preparing for emergencies</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="related-products">
+    <div class="container">
+        <h2>Related Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="multivitamins.webp" alt="Multivitamins">
+                </div>
+                <div class="product-info">
+                    <h3>Multivitamins (Kids)</h3>
+                    <p class="category">Vitamins and Supplements</p>
+                    <p class="description">Supports overall health by filling nutritional gaps. Helps boost energy, immunity, and daily wellness.</p>
+                    <div class="product-price">
+                        <span class="price">₱350.00</span>
+                    </div>
+                    <div class="product-actions">
+                        <a href="multivitamins-details.html" class="btn-small">View Details</a>
+                        <button class="btn-small btn-cart" onclick="addToCart(8)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="Electrolyte water.webp" alt="Electrolyte Water">
+                </div>
+                <div class="product-info">
+                    <h3>Electrolyte Water</h3>
+                    <p class="category">Vitamins and Supplements</p>
+                    <p class="description">Rehydrates and replenishes lost electrolytes to support hydration and energy.</p>
+                    <div class="product-price">
+                        <span class="price">₱85.00</span>
+                    </div>
+                    <div class="product-actions">
+                        <a href="electrolyte-water-details.html" class="btn-small">View Details</a>
+                        <button class="btn-small btn-cart" onclick="addToCart(3)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="disclaimer">
+    <div class="container">
+        <h2>Important Notice</h2>
+        <p>The information provided on this website is for general informational purposes only and does not replace professional medical advice. Always consult with a healthcare professional before taking any medication, especially if you have existing health conditions or are taking other medications.</p>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>PharmaQuick</h3>
+                <p>Your trusted guide for over-the-counter medicines.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="health-tips.html">Health Tips</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="products.html?category=fever">Fever Relief</a></li>
+                    <li><a href="products.html?category=cough-cold">Cough & Cold</a></li>
+                    <li><a href="products.html?category=pain">Pain Relief</a></li>
+                    <li><a href="cart.html">Your Cart</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>University of Caloocan City<br>Congressional Rd Ext, Barangay 171<br>Caloocan, Metro Manila</p>
+                <p>Email: info@pharmaquick.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 PharmaQuick. All rights reserved. Developed by Attila P. Sabiniano</p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="cart.js"></script>
+<script>
+
+    const quantityInput = document.getElementById('quantity');
+    const decreaseBtn = document.querySelector('.decrease');
+    const increaseBtn = document.querySelector('.increase');
+    
+    decreaseBtn.addEventListener('click', function() {
+        let currentValue = parseInt(quantityInput.value);
+        if (currentValue > 1) {
+            quantityInput.value = currentValue - 1;
+        }
+    });
+    
+    increaseBtn.addEventListener('click', function() {
+        let currentValue = parseInt(quantityInput.value);
+        if (currentValue < 99) {
+            quantityInput.value = currentValue + 1;
+        }
+    });
+    
+
+    document.getElementById('addToCartBtn').addEventListener('click', function() {
+        const quantity = parseInt(document.getElementById('quantity').value);
+        const productId = 4; 
+
+        for (let i = 0; i < quantity; i++) {
+            addToCart(productId);
+        }
+        
+
+        alert(`Added ${quantity} Emergency Kit(s) to your cart!`);
+    });
+    
+
+    document.getElementById('buyNowBtn').addEventListener('click', function() {
+        const quantity = parseInt(document.getElementById('quantity').value);
+        const productId = 4; 
+        
+
+        for (let i = 0; i < quantity; i++) {
+            addToCart(productId);
+        }
+        
+
+        window.location.href = 'cart.html';
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antacid - PharmaQuick</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="logo">
+            <img src="logo1.png" alt="PharmaQuick Logo" class="site-logo">
+            <div class="logo-text">
+                <h1>PharmaQuick</h1>
+                <p>Your OTC Medicine Guide</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="health-tips.html">Health Tips</a></li>
+                <li><a href="drug-guide.html">Drug Guide</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-icons">
+            <a href="cart.html" class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count" id="cartCount">0</span>
+            </a>
+            <a href="login.html" class="user-icon">
+                <i class="fas fa-user"></i>
+            </a>
+        </div>
+    </div>
+</header>
+
+<section class="product-details">
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> &gt; <a href="products.html">Products</a> &gt; Antacid
+        </div>
+        
+        <div class="product-detail-content">
+            <div class="product-image-large">
+                <img src="ALUMINUM-HYDROXIDE-MAGNESIUM-HYDROXIDE-SUSPENION-120ML.png" alt="Antacid">
+            </div>
+            
+            <div class="product-info-detailed">
+                <h2>Aluminum Hydroxide & Magnesium Hydroxide Suspension</h2>
+                <p class="category">Digestive Health</p>
+                
+                <div class="product-price">
+                    <span class="price">₱75.00</span>
+                    <span class="original-price">₱85.00</span>
+                </div>
+                
+                <div class="product-section">
+                    <p>Neutralizes stomach acid and provides fast relief from heartburn, acid indigestion, and upset stomach. This dual-action formula combines aluminum hydroxide and magnesium hydroxide for effective acid neutralization.</p>
+                </div>
+                
+                <div class="product-quantity">
+                    <label for="quantity">Quantity:</label>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn decrease">-</button>
+                        <input type="number" id="quantity" value="1" min="1" max="99" class="quantity-input">
+                        <button class="quantity-btn increase">+</button>
+                    </div>
+                </div>
+                
+                <div class="product-actions">
+                    <button class="btn" id="addToCartBtn">Add to Cart</button>
+                    <button class="btn btn-secondary" id="buyNowBtn" style="background-color: var(--success-color); border: none;">Buy Now</button>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Description</h3>
+                    <p>This antacid suspension contains a combination of aluminum hydroxide and magnesium hydroxide, which work together to neutralize excess stomach acid. The liquid suspension format allows for fast-acting relief of acid-related discomfort. It helps relieve symptoms associated with acid indigestion, heartburn, and upset stomach. The balanced formula minimizes the potential side effects that can occur with single-ingredient antacids.</p>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Active Ingredients</h3>
+                    <ul>
+                        <li><strong>Aluminum Hydroxide:</strong> Neutralizes stomach acid and helps reduce phosphate absorption</li>
+                        <li><strong>Magnesium Hydroxide:</strong> Neutralizes stomach acid and may have a mild laxative effect</li>
+                    </ul>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Uses</h3>
+                    <ul>
+                        <li>Relief of heartburn and acid indigestion</li>
+                        <li>Temporary relief of upset stomach associated with these symptoms</li>
+                        <li>Acid reflux management</li>
+                        <li>Relief from sour stomach</li>
+                        <li>Temporary relief from discomfort due to excess stomach acid</li>
+                    </ul>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Dosage</h3>
+                    <p><strong>Adults and children 12 years and over:</strong> 2-4 teaspoons (10-20 mL) between meals and at bedtime, or as directed by a doctor.<br>
+                    <strong>Children under 12 years:</strong> Consult a doctor before use.</p>
+                    <p>Shake well before use. May be taken with water.</p>
+                </div>
+                
+                <div class="product-section">
+                    <h3>How It Works</h3>
+                    <p>Antacids work by neutralizing stomach acid, which can provide quick relief from heartburn and indigestion. When you consume an antacid:</p>
+                    <ol>
+                        <li>The active ingredients (aluminum hydroxide and magnesium hydroxide) react chemically with stomach acid (hydrochloric acid)</li>
+                        <li>This reaction neutralizes the acid, raising the pH in your stomach</li>
+                        <li>As the acidity decreases, the burning sensation and discomfort are reduced</li>
+                        <li>The combination of ingredients provides balanced relief while minimizing side effects</li>
+                    </ol>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Precautions</h3>
+                    <ul>
+                        <li>Do not use if you have kidney disease, except under the advice and supervision of a doctor</li>
+                        <li>Ask a doctor or pharmacist before use if you are taking a prescription drug, as antacids may interact with certain medications</li>
+                        <li>Stop use and ask a doctor if symptoms last more than 2 weeks</li>
+                        <li>If you have kidney disease, consult with a healthcare provider before using products containing magnesium</li>
+                        <li>Aluminum-containing antacids may cause constipation, while magnesium-containing antacids may cause diarrhea</li>
+                        <li>Do not take the maximum dosage for more than 2 weeks except under the advice and supervision of a doctor</li>
+                    </ul>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Storage</h3>
+                    <ul>
+                        <li>Store at room temperature (20-25°C or 68-77°F)</li>
+                        <li>Keep tightly closed</li>
+                        <li>Protect from excessive heat and moisture</li>
+                        <li>Keep out of reach of children</li>
+                    </ul>
+                </div>
+                
+                <div class="product-section">
+                    <h3>When to Seek Medical Attention</h3>
+                    <p>While antacids can provide relief for occasional heartburn and indigestion, certain symptoms may indicate a more serious condition. Seek medical attention if you experience:</p>
+                    <ul>
+                        <li>Severe or persistent abdominal pain</li>
+                        <li>Difficulty swallowing</li>
+                        <li>Frequent vomiting</li>
+                        <li>Vomiting blood or material that looks like coffee grounds</li>
+                        <li>Black, tarry stools</li>
+                        <li>Unexplained weight loss</li>
+                        <li>Chest pain that may be accompanied by shortness of breath, sweating, or pain radiating to the jaw, neck, or arm</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="related-products">
+    <div class="container">
+        <h2>Related Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="Lansoprazole.webp" alt="Lansoprazole">
+                </div>
+                <div class="product-info">
+                    <h3>Lansoprazole</h3>
+                    <p class="category">Digestive Health</p>
+                    <p class="description">Reduces stomach acid to relieve heartburn, acid reflux, and ulcers. For short-term or maintenance treatment as prescribed.</p>
+                    <div class="product-price">
+                        <span class="price">₱120.00</span>
+                    </div>
+                    <div class="product-actions">
+                        <a href="lansoprazole-details.html" class="btn-small">View Details</a>
+                        <button class="btn-small btn-cart" onclick="addToCart(6)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="Omeprazole.webp" alt="Omeprazole">
+                </div>
+                <div class="product-info">
+                    <h3>Omeprazole</h3>
+                    <p class="category">Digestive Health</p>
+                    <p class="description">Reduces stomach acid to relieve heartburn, acid reflux, and ulcers. For short-term or maintenance use as directed.</p>
+                    <div class="product-price">
+                        <span class="price">₱250.00</span>
+                    </div>
+                    <div class="product-actions">
+                        <a href="omeprazole-details.html" class="btn-small">View Details</a>
+                        <button class="btn-small btn-cart" onclick="addToCart(10)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="disclaimer">
+    <div class="container">
+        <h2>Important Notice</h2>
+        <p>The information provided on this website is for general informational purposes only and does not replace professional medical advice. Always consult with a healthcare professional before taking any medication, especially if you have existing health conditions or are taking other medications.</p>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>PharmaQuick</h3>
+                <p>Your trusted guide for over-the-counter medicines.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="health-tips.html">Health Tips</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="products.html?category=fever">Fever Relief</a></li>
+                    <li><a href="products.html?category=cough-cold">Cough & Cold</a></li>
+                    <li><a href="products.html?category=pain">Pain Relief</a></li>
+                    <li><a href="cart.html">Your Cart</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>University of Caloocan City<br>Congressional Rd Ext, Barangay 171<br>Caloocan, Metro Manila</p>
+                <p>Email: info@pharmaquick.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 PharmaQuick. All rights reserved. Developed by Attila P. Sabiniano</p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="cart.js"></script>
+<script>
+
+    const quantityInput = document.getElementById('quantity');
+    const decreaseBtn = document.querySelector('.decrease');
+    const increaseBtn = document.querySelector('.increase');
+    
+    decreaseBtn.addEventListener('click', function() {
+        let currentValue = parseInt(quantityInput.value);
+        if (currentValue > 1) {
+            quantityInput.value = currentValue - 1;
+        }
+    });
+    
+    increaseBtn.addEventListener('click', function() {
+        let currentValue = parseInt(quantityInput.value);
+        if (currentValue < 99) {
+            quantityInput.value = currentValue + 1;
+        }
+    });
+    
+
+    document.getElementById('addToCartBtn').addEventListener('click', function() {
+        const quantity = parseInt(document.getElementById('quantity').value);
+        const productId = 5; 
+        
+
+        for (let i = 0; i < quantity; i++) {
+            addToCart(productId);
+        }
+        
+
+        alert(`Added ${quantity} Antacid to your cart!`);
+    });
+    
+
+    document.getElementById('buyNowBtn').addEventListener('click', function() {
+        const quantity = parseInt(document.getElementById('quantity').value);
+        const productId = 5; 
+        
+t
+        for (let i = 0; i < quantity; i++) {
+            addToCart(productId);
+        }
+        
+
+        window.location.href = 'cart.html';
+    });
+</script>
+</body>
+</html>

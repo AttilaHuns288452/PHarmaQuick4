@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lansoprazole - PharmaQuick</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="logo">
+            <img src="logo1.png" alt="PharmaQuick Logo" class="site-logo">
+            <div class="logo-text">
+                <h1>PharmaQuick</h1>
+                <p>Your OTC Medicine Guide</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="health-tips.html">Health Tips</a></li>
+                <li><a href="drug-guide.html">Drug Guide</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-icons">
+            <a href="cart.html" class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count" id="cartCount">0</span>
+            </a>
+            <a href="login.html" class="user-icon">
+                <i class="fas fa-user"></i>
+            </a>
+        </div>
+    </div>
+</header>
+
+<section class="product-details">
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> &gt; <a href="products.html">Products</a> &gt; Lansoprazole
+        </div>
+        
+        <div class="product-detail-content">
+            <div class="product-image-large">
+                <img src="Lansoprazole.webp" alt="Lansoprazole">
+            </div>
+            
+            <div class="product-info-detailed">
+                <h2>Lansoprazole 15mg Capsules</h2>
+                <p class="category">Digestive Health</p>
+                
+                <div class="product-price">
+                    <span class="price">₱120.00</span>
+                    <span class="original-price">₱135.00</span>
+                </div>
+                
+                <div class="product-section">
+                    <p>Lansoprazole is a proton pump inhibitor (PPI) that reduces stomach acid production to relieve symptoms of acid-related conditions including heartburn, acid reflux, and stomach ulcers.</p>
+                </div>
+                
+                <div class="product-quantity">
+                    <label for="quantity">Quantity:</label>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn decrease">-</button>
+                        <input type="number" id="quantity" value="1" min="1" max="99" class="quantity-input">
+                        <button class="quantity-btn increase">+</button>
+                    </div>
+                </div>
+                
+                <div class="product-actions">
+                    <button class="btn" id="addToCartBtn">Add to Cart</button>
+                    <button class="btn btn-secondary" id="buyNowBtn" style="background-color: var(--success-color); border: none;">Buy Now</button>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Description</h3>
+                    <p>Lansoprazole belongs to a class of medications called proton pump inhibitors (PPIs). It works by decreasing the amount of acid produced in the stomach, which helps to relieve symptoms of various acid-related conditions. This medication is used to treat conditions where reducing stomach acid is needed, such as gastroesophageal reflux disease (GERD), ulcers, and Zollinger-Ellison syndrome.</p>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Active Ingredient</h3>
+                    <p>Each delayed-release capsule contains 15mg of Lansoprazole.</p>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Uses</h3>
+                    <ul>
+                        <li>Treatment of heartburn and other symptoms of gastroesophageal reflux disease (GERD)</li>
+                        <li>Short-term treatment of active duodenal ulcers</li>
+                        <li>Short-term treatment of active benign gastric ulcer</li>
+                        <li>Healing of erosive esophagitis</li>
+                        <li>Reduction of risk of NSAID-associated gastric ulcers</li>
+                        <li>Treatment of pathological hypersecretory conditions, including Zollinger-Ellison syndrome</li>
+                    </ul>
+                </div>
+                
+                <div class="product-section">
+                    <h3>How It Works</h3>
+                    <p>Lansoprazole works by blocking the enzyme in the wall of the stomach that produces acid. By reducing acid production, it:</p>
+                    <ul>
+                        <li>Decreases symptoms of heartburn and acid reflux</li>
+                        <li>Allows damaged tissue in the esophagus, stomach, or duodenum to heal</li>
+                        <li>Prevents further damage to these tissues</li>
+                        <li>Provides longer-lasting acid reduction compared to antacids and H2 blockers</li>
+                    </ul>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Dosage</h3>
+                    <p><strong>For adults:</strong></p>
+                    <ul>
+                        <li><strong>Heartburn/GERD:</strong> 15mg once daily for up to 8 weeks</li>
+                        <li><strong>Duodenal Ulcers:</strong> 15mg once daily for 4 weeks</li>
+                        <li><strong>Gastric Ulcers:</strong> 30mg once daily for up to 8 weeks</li>
+                        <li><strong>Erosive Esophagitis:</strong> 30mg once daily for up to 8 weeks</li>
+                    </ul>
+                    <p><strong>Important dosing instructions:</strong></p>
+                    <ul>
+                        <li>Take before meals (preferably before breakfast)</li>
+                        <li>Swallow capsules whole; do not crush or chew</li>
+                        <li>If you have difficulty swallowing capsules, they can be opened and the contents sprinkled on a tablespoon of applesauce, then swallowed immediately</li>
+                        <li>Do not store the mixture for future use</li>
+                    </ul>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Precautions</h3>
+                    <p><strong>Before taking Lansoprazole, tell your doctor if you have:</strong></p>
+                    <ul>
+                        <li>Liver disease</li>
+                        <li>Low magnesium levels</li>
+                        <li>Osteoporosis or risk factors for bone fractures</li>
+                        <li>Phenylketonuria (PKU) - some formulations may contain phenylalanine</li>
+                        <li>Planned endoscopic procedure with sodium picosulfate</li>
+                        <li>History of vitamin B12 deficiency</li>
+                    </ul>
+                    
+                    <p><strong>Drug Interactions:</strong> Lansoprazole may interact with:</p>
+                    <ul>
+                        <li>Atazanavir and nelfinavir (HIV medications)</li>
+                        <li>Warfarin (blood thinner)</li>
+                        <li>Methotrexate</li>
+                        <li>Digoxin</li>
+                        <li>Iron supplements</li>
+                        <li>Clopidogrel</li>
+                        <li>Tacrolimus</li>
+                        <li>Sucralfate</li>
+                        <li>St. John's Wort</li>
+                    </ul>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Possible Side Effects</h3>
+                    <p><strong>Common side effects:</strong></p>
+                    <ul>
+                        <li>Headache</li>
+                        <li>Nausea</li>
+                        <li>Diarrhea</li>
+                        <li>Stomach pain</li>
+                        <li>Constipation</li>
+                    </ul>
+                    
+                    <p><strong>Less common but serious side effects:</strong></p>
+                    <ul>
+                        <li>Severe diarrhea with watery stools, stomach pain, and fever</li>
+                        <li>Bone fractures (with long-term use)</li>
+                        <li>Low magnesium levels (symptoms include muscle spasms, irregular heartbeat, seizures)</li>
+                        <li>Vitamin B12 deficiency (with long-term use)</li>
+                        <li>Kidney problems</li>
+                        <li>Severe skin reactions</li>
+                        <li>Lupus-like syndrome (joint pain, skin rash on cheeks or arms)</li>
+                    </ul>
+                    
+                    <p><strong>Seek immediate medical attention if you experience:</strong></p>
+                    <ul>
+                        <li>Signs of an allergic reaction (hives, difficulty breathing, swelling of face, lips, tongue, or throat)</li>
+                        <li>Severe stomach pain</li>
+                        <li>Seizures</li>
+                        <li>Kidney problems (urinating less than usual, blood in urine, swelling, rapid weight gain)</li>
+                        <li>Symptoms of low magnesium (dizziness, confusion, fast or irregular heart rate, jitteriness, muscle cramps)</li>
+                    </ul>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Storage</h3>
+                    <ul>
+                        <li>Store at room temperature (20-25°C or 68-77°F)</li>
+                        <li>Keep away from moisture and heat</li>
+                        <li>Keep the container tightly closed</li>
+                        <li>Keep out of reach of children</li>
+                    </ul>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Important Information</h3>
+                    <ul>
+                        <li>Lansoprazole is intended for short-term use (usually 4-8 weeks) unless otherwise directed by a healthcare provider</li>
+                        <li>Long-term use may increase the risk of certain side effects</li>
+                        <li>If symptoms persist or worsen after 14 days of treatment, consult a healthcare provider</li>
+                        <li>This medication may mask symptoms of stomach cancer; consult a doctor if you have warning signs like unexplained weight loss or recurring vomiting</li>
+                        <li>Proton pump inhibitors may increase the risk of certain infections in the digestive tract</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="related-products">
+    <div class="container">
+        <h2>Related Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="ALUMINUM-HYDROXIDE-MAGNESIUM-HYDROXIDE-SUSPENION-120ML.png" alt="Antacid">
+                </div>
+                <div class="product-info">
+                    <h3>Antacid</h3>
+                    <p class="category">Digestive Health</p>
+                    <p class="description">Neutralizes stomach acid and relieves heartburn, indigestion, and upset stomach. Available in tablets and liquid form.</p>
+                    <div class="product-price">
+                        <span class="price">₱75.00</span>
+                    </div>
+                    <div class="product-actions">
+                        <a href="antacid-details.html" class="btn-small">View Details</a>
+                        <button class="btn-small btn-cart" onclick="addToCart(5)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="Omeprazole.webp" alt="Omeprazole">
+                </div>
+                <div class="product-info">
+                    <h3>Omeprazole</h3>
+                    <p class="category">Digestive Health</p>
+                    <p class="description">Reduces stomach acid to relieve heartburn, acid reflux, and ulcers. For short-term or maintenance use as directed.</p>
+                    <div class="product-price">
+                        <span class="price">₱250.00</span>
+                    </div>
+                    <div class="product-actions">
+                        <a href="omeprazole-details.html" class="btn-small">View Details</a>
+                        <button class="btn-small btn-cart" onclick="addToCart(10)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="disclaimer">
+    <div class="container">
+        <h2>Important Notice</h2>
+        <p>The information provided on this website is for general informational purposes only and does not replace professional medical advice. Always consult with a healthcare professional before taking any medication, especially if you have existing health conditions or are taking other medications.</p>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>PharmaQuick</h3>
+                <p>Your trusted guide for over-the-counter medicines.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="health-tips.html">Health Tips</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="products.html?category=fever">Fever Relief</a></li>
+                    <li><a href="products.html?category=cough-cold">Cough & Cold</a></li>
+                    <li><a href="products.html?category=pain">Pain Relief</a></li>
+                    <li><a href="cart.html">Your Cart</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>University of Caloocan City<br>Congressional Rd Ext, Barangay 171<br>Caloocan, Metro Manila</p>
+                <p>Email: info@pharmaquick.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 PharmaQuick. All rights reserved. Developed by Attila P. Sabiniano</p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="cart.js"></script>
+<script>
+
+    const quantityInput = document.getElementById('quantity');
+    const decreaseBtn = document.querySelector('.decrease');
+    const increaseBtn = document.querySelector('.increase');
+    
+    decreaseBtn.addEventListener('click', function() {
+        let currentValue = parseInt(quantityInput.value);
+        if (currentValue > 1) {
+            quantityInput.value = currentValue - 1;
+        }
+    });
+    
+    increaseBtn.addEventListener('click', function() {
+        let currentValue = parseInt(quantityInput.value);
+        if (currentValue < 99) {
+            quantityInput.value = currentValue + 1;
+        }
+    });
+    
+
+    document.getElementById('addToCartBtn').addEventListener('click', function() {
+        const quantity = parseInt(document.getElementById('quantity').value);
+        const productId = 6; 
+        
+       
+        for (let i = 0; i < quantity; i++) {
+            addToCart(productId);
+        }
+        
+       
+        alert(`Added ${quantity} Lansoprazole to your cart!`);
+    });
+    
+
+    document.getElementById('buyNowBtn').addEventListener('click', function() {
+        const quantity = parseInt(document.getElementById('quantity').value);
+        const productId = 6; 
+        
+
+        for (let i = 0; i < quantity; i++) {
+            addToCart(productId);
+        }
+        
+
+        window.location.href = 'cart.html';
+    });
+</script>
+</body>
+</html>

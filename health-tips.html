@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Tips & Advice - PharmaQuick</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="logo">
+            <img src="logo1.png" alt="PharmaQuick Logo" class="site-logo">
+            <div class="logo-text">
+                <h1>PharmaQuick</h1>
+                <p>Your OTC Medicine Guide</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="health-tips.html"  class="active" >Health Tips</a></li>
+                <li><a href="drug-guide.html">Drug Guide</a></li>
+                <li><a href="about.html" >About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-icons">
+            <a href="cart.html" class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count" id="cartCount">0</span>
+            </a>
+            <a href="login.html" class="user-icon">
+                <i class="fas fa-user"></i>
+            </a>
+        </div>
+    </div>
+</header>
+
+
+    <section class="page-header">
+        <div class="container">
+            <h2>Health Tips & Advice</h2>
+            <p>Expert advice for your everyday health concerns</p>
+        </div>
+    </section>
+
+    <section class="health-tips-filters">
+        <div class="container">
+            <div class="filter-container">
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Search health tips...">
+                    <button id="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="filter-options">
+                    <div class="filter-group">
+                        <label for="category-filter">Category:</label>
+                        <select id="category-filter">
+                            <option value="all">All Categories</option>
+                            <option value="wellness">Wellness</option>
+                            <option value="nutrition">Nutrition</option>
+                            <option value="fitness">Fitness</option>
+                            <option value="mental-health">Mental Health</option>
+                            <option value="first-aid">First Aid</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="health-tips-content">
+        <div class="container">
+            <div class="tips-layout">
+                <div class="tips-main">
+                    <article class="tip-article">
+                        <div class="tip-header">
+                            <img src="hydration-tip.jpg" alt="Stay Hydrated" style="max-width: 1cm; max-height: 1cm; margin-left: 1cm; margin-top: 0.5cm;" >
+                            <div class="tip-meta">
+                                <span class="tip-category">Wellness</span>
+                                <span class="tip-date">November 15, 2025</span>
+                            </div>
+                            <h2>The Importance of Staying Hydrated</h2>
+                        </div>
+                        <div class="tip-body">
+                            <p>Water is essential for nearly every bodily function. From regulating body temperature to flushing out toxins, proper hydration is key to maintaining good health.</p>
+                            
+                            <h3>Why is hydration so important?</h3>
+                            <p>Your body is composed of about 60% water. The functions of these bodily fluids include digestion, absorption, circulation, creation of saliva, transportation of nutrients, and maintenance of body temperature.</p>
+                            
+                            <h3>Signs of dehydration</h3>
+                            <ul>
+                                <li>Feeling thirsty</li>
+                                <li>Dark yellow urine</li>
+                                <li>Feeling dizzy or lightheaded</li>
+                                <li>Dry mouth, lips, and eyes</li>
+                                <li>Headaches</li>
+                                <li>Fatigue</li>
+                            </ul>
+                            
+                            <h3>How much water should you drink?</h3>
+                            <p>While the common advice is to drink eight 8-ounce glasses of water a day (about 2 liters), the actual amount you need depends on several factors:</p>
+                            <ul>
+                                <li>Your overall health</li>
+                                <li>Your activity level</li>
+                                <li>Where you live (hot and humid climates increase water needs)</li>
+                                <li>Whether you're pregnant or breastfeeding</li>
+                            </ul>
+                            
+                            <h3>Tips for staying hydrated</h3>
+                            <ol>
+                                <li>Carry a reusable water bottle with you throughout the day</li>
+                                <li>Set reminders to drink water regularly</li>
+                                <li>Eat water-rich foods like fruits and vegetables</li>
+                                <li>Flavor your water with fruits or herbs if you find plain water boring</li>
+                                <li>Drink a glass of water before each meal</li>
+                            </ol>
+                            
+                            <div class="tip-products">
+                                <h3>Related Products</h3>
+                                <div class="mini-product-grid">
+                                    <div class="mini-product">
+                                        <img src="Electrolyte water.webp" alt="Electrolyte Drink">
+                                        <div class="mini-product-info">
+                                            <h4>Electrolyte Water</h4>
+                                            <p>Replenishes essential electrolytes lost during exercise or illness</p>
+                                            <a href="electrolyte-water-details.html" class="btn-small">View Product</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="tip-article">
+                        <div class="tip-header">
+                            <img src="sleep.jpg" alt="Stay Hydrated" style="max-width: 1.5cm; max-height: 1.5cm; margin-left: 1cm; margin-top: 0.5cm;" >
+                            <div class="tip-meta">
+                                <span class="tip-category">Wellness</span>
+                                <span class="tip-date">November 10, 2025</span>
+                            </div>
+                            <h2>Tips for Better Sleep Quality</h2>
+                        </div>
+                        <div class="tip-body">
+                            <p>Quality sleep is essential for physical health, mental clarity, and emotional well-being. Here are some practical tips to improve your sleep habits.</p>
+                            
+                            <h3>Why is good sleep important?</h3>
+                            <p>During sleep, your body works to support healthy brain function and maintain your physical health. Sleep deficiency can lead to increased risk of heart disease, kidney disease, high blood pressure, diabetes, and stroke.</p>
+                            
+                            <h3>Tips for better sleep</h3>
+                            <ol>
+                                <li><strong>Stick to a sleep schedule:</strong> Go to bed and wake up at the same time every day, even on weekends.</li>
+                                <li><strong>Create a restful environment:</strong> Keep your bedroom cool, quiet, and dark.</li>
+                                <li><strong>Limit exposure to screens before bedtime:</strong> The blue light emitted by phones, tablets, and computers can interfere with your ability to fall asleep.</li>
+                                <li><strong>Avoid caffeine and alcohol before bed:</strong> Both can disrupt sleep patterns.</li>
+                                <li><strong>Exercise regularly:</strong> Physical activity can help you fall asleep faster and enjoy deeper sleep.</li>
+                            </ol>
+                            
+                            <div class="tip-products">
+                                <h3>Related Products</h3>
+                                <div class="mini-product-grid">
+                                    <div class="mini-product">
+                                        <img src="now-melatonin-10mg-100-caps-supplements-now-foods-479644_1600x.webp" alt="Melatonin Supplements">
+                                        <div class="mini-product-info">
+                                            <h4>Melatonin 10mg Tablets</h4>
+                                            <p>Helps regulate sleep cycles and improve sleep quality</p>
+                                            <a href="melatonin-details.html" class="btn-small">View Product</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="tip-article">
+                        <div class="tip-header">
+                            <img src="immune.jpg" alt="Stay Hydrated" style="max-width: 1.5cm; max-height: 1.5cm; margin-left: 1cm; margin-top: 0.5cm;" >
+                            <div class="tip-meta">
+                                <span class="tip-category">Wellness</span>
+                                <span class="tip-date">November 5, 2025</span>
+                            </div>
+                            <h2>Boosting Your Immune System Naturally</h2>
+                        </div>
+                        <div class="tip-body">
+                            <p>A strong immune system helps protect you from disease and infection. While there's no magic pill to boost immunity, there are ways to keep your immune system functioning optimally.</p>
+                            
+                            <h3>Natural ways to boost immunity</h3>
+                            <ol>
+                                <li><strong>Eat a balanced diet:</strong> Focus on fruits, vegetables, lean proteins, and whole grains.</li>
+                                <li><strong>Get enough sleep:</strong> Aim for 7-9 hours of quality sleep each night.</li>
+                                <li><strong>Exercise regularly:</strong> Moderate exercise can boost immune function.</li>
+                                <li><strong>Stay hydrated:</strong> Water helps your body eliminate toxins and other bacteria that might cause illness.</li>
+                                <li><strong>Manage stress:</strong> Chronic stress can weaken your immune system.</li>
+                                <li><strong>Wash your hands frequently:</strong> This simple habit helps prevent the spread of germs.</li>
+                            </ol>
+                            
+                            <h3>Key nutrients for immune health</h3>
+                            <ul>
+                                <li><strong>Vitamin C:</strong> Found in citrus fruits, strawberries, bell peppers, and broccoli.</li>
+                                <li><strong>Vitamin D:</strong> Produced by your body when exposed to sunlight; also found in fatty fish and fortified foods.</li>
+                                <li><strong>Zinc:</strong> Found in oysters, red meat, poultry, beans, and nuts.</li>
+                                <li><strong>Probiotics:</strong> Found in yogurt, kefir, and fermented foods.</li>
+                            </ul>
+                            
+                            <div class="tip-products">
+                                <h3>Related Products</h3>
+                                <div class="mini-product-grid">
+                                    <div class="mini-product">
+                                        <img src="multivitamins.webp" alt="Vitamin C Supplements">
+                                        <div class="mini-product-info">
+                                            <h4>Kids Multivitamin Gummies</h4>
+                                            <p>Supports immune function and overall health</p>
+                                            <a href="multivitamins-kids-details.html" class="btn-small">View Product</a>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                
+                <aside class="tips-sidebar">
+                    <div class="sidebar-widget">
+                        <h3>Popular Topics</h3>
+                        <ul class="topic-list">
+                            <li><a href="health-tips.html?category=wellness">Wellness Tips</a></li>
+                            <li><a href="health-tips.html?category=nutrition">Nutrition Advice</a></li>
+                            <li><a href="health-tips.html?category=fitness">Fitness Guidelines</a></li>
+                            <li><a href="health-tips.html?category=mental-health">Mental Health</a></li>
+                            <li><a href="health-tips.html?category=first-aid">First Aid Basics</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="sidebar-widget">
+                        <h3>Featured Products</h3>
+                        <div class="widget-products">
+                            <div class="widget-product">
+                                <img src="multivitamins.webp" alt="Multivitamin">
+                                <div>
+                                    <h4>Kids Multivitamin Gummies</h4>
+                                    <p class="price">₱350.00</p>
+                                    <a href="multivitamins-kids-details.html">View Details</a>
+                                </div>
+                            </div>
+                            <div class="widget-product">
+                                <img src="Emergency Kit.avif" alt="First Aid Kit">
+                                <div>
+                                    <h4>Emergency First Aid Kit</h4>
+                                    <p class="price">₱850.00</p>
+                                    <a href="emergency-kit-details.html">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="sidebar-widget">
+                        <h3>Subscribe to Health Tips</h3>
+                        <p>Get the latest health advice delivered to your inbox</p>
+                        <form class="subscribe-form">
+                            <input type="email" placeholder="Your email address" required>
+                            <button type="submit" class="btn-small">Subscribe</button>
+                        </form>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <section class="disclaimer">
+        <div class="container">
+            <h2>Important Notice</h2>
+            <p>The information provided on this website is for general informational purposes only and does not replace professional medical advice. Always consult with a healthcare professional before taking any medication, especially if you have existing health conditions or are taking other medications.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PharmaQuick</h3>
+                    <p>Your trusted guide for over-the-counter medicines.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="health-tips.html">Health Tips</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Shop</h3>
+                    <ul>
+                        <li><a href="products.html?category=fever">Fever Relief</a></li>
+                        <li><a href="products.html?category=cough-cold">Cough & Cold</a></li>
+                        <li><a href="products.html?category=pain">Pain Relief</a></li>
+                        <li><a href="cart.html">Your Cart</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>University of Caloocan City<br>Congressional Rd Ext, Barangay 171<br>Caloocan, Metro Manila</p>
+                    <p>Email: info@pharmaquick.com</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 PharmaQuick. All rights reserved. Developed by Attila P. Sabiniano</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/cart.js"></script>
+
+</body>
+</html>

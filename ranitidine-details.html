@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranitidine - PharmaQuick</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="logo">
+            <img src="logo1.png" alt="PharmaQuick Logo" class="site-logo">
+            <div class="logo-text">
+                <h1>PharmaQuick</h1>
+                <p>Your OTC Medicine Guide</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="health-tips.html">Health Tips</a></li>
+                <li><a href="drug-guide.html">Drug Guide</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-icons">
+            <a href="cart.html" class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count" id="cartCount">0</span>
+            </a>
+            <a href="login.html" class="user-icon">
+                <i class="fas fa-user"></i>
+            </a>
+        </div>
+    </div>
+</header>
+
+<section class="product-details">
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> &gt; <a href="products.html">Products</a> &gt; Ranitidine
+        </div>
+        
+        <div class="product-detail-content">
+            <div class="product-image-large">
+                <img src="Ranitidine.png" alt="Ranitidine">
+            </div>
+            
+            <div class="product-info-detailed">
+                <h2>Ranitidine 150mg Tablets</h2>
+                <p class="category">Digestive Health</p>
+                
+                <div class="product-price">
+                    <span class="price">₱180.00</span>
+                    <span class="original-price">₱210.00</span>
+                </div>
+                
+                <div class="product-section">
+                    <p>Ranitidine is an H2 (histamine-2) blocker that reduces the amount of acid produced in the stomach. It provides effective relief from heartburn, acid indigestion, and sour stomach, and can help prevent these symptoms when taken before meals.</p>
+                </div>
+                
+                <div class="product-quantity">
+                    <label for="quantity">Quantity:</label>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn decrease">-</button>
+                        <input type="number" id="quantity" value="1" min="1" max="99" class="quantity-input">
+                        <button class="quantity-btn increase">+</button>
+                    </div>
+                </div>
+                
+                <div class="product-actions">
+                    <button class="btn" id="addToCartBtn">Add to Cart</button>
+                    <button class="btn btn-secondary" id="buyNowBtn" style="background-color: var(--success-color); border: none;">Buy Now</button>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Description</h3>
+                    <p>Ranitidine belongs to a class of medications called H2 (histamine-2) blockers. It works by reducing the amount of acid your stomach produces by blocking histamine, a natural substance in the body that stimulates acid secretion in the stomach.</p>
+                    <p>Our Ranitidine 150mg tablets provide effective relief from acid-related discomfort and can be used to treat and prevent various conditions caused by excess stomach acid, including heartburn, acid indigestion, sour stomach, and gastroesophageal reflux disease (GERD). It can also help heal and prevent ulcers in the stomach and intestines.</p>
+                    <p><strong>Note:</strong> In some countries, ranitidine products have been withdrawn from the market due to concerns about a contaminant called N-nitrosodimethylamine (NDMA). Please consult with your healthcare provider or pharmacist about current recommendations in your area.</p>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Active Ingredient</h3>
+                    <p>Each tablet contains 150mg of Ranitidine (as ranitidine hydrochloride).</p>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Uses</h3>
+                    <ul>
+                        <li>Relieves and prevents heartburn associated with acid indigestion and sour stomach</li>
+                        <li>Treats and prevents symptoms of gastroesophageal reflux disease (GERD)</li>
+                        <li>Helps heal and prevent duodenal and gastric ulcers</li>
+                        <li>Treats conditions in which the stomach produces too much acid, such as Zollinger-Ellison syndrome</li>
+                        <li>Prevents heartburn when taken 30-60 minutes before meals or activities that may cause heartburn</li>
+                        <li>May be used as part of a treatment regimen for H. pylori infection (under medical supervision)</li>
+                    </ul>
+                </div>
+                
+                <div class="product-section">
+                    <h3>How It Works</h3>
+                    <p>Ranitidine works by:</p>
+                    <ul>
+                        <li>Blocking histamine H2 receptors on the cells in the stomach lining</li>
+                        <li>Reducing the production of stomach acid by inhibiting histamine's action</li>
+                        <li>Decreasing both the volume and concentration of acid that the stomach produces</li>
+                        <li>Providing relief from acid-related symptoms for up to 12 hours</li>
+                        <li>Creating a less acidic environment that allows damaged tissue in the digestive tract to heal</li>
+                    </ul>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Dosage</h3>
+                    <p><strong>For adults and children 12 years and older:</strong></p>
+                    <ul>
+                        <li><strong>To relieve symptoms:</strong> Take 1 tablet (150mg) with a glass of water as needed, up to twice daily</li>
+                        <li><strong>To prevent symptoms:</strong> Take 1 tablet (150mg) 30-60 minutes before eating food or drinking beverages that cause heartburn</li>
+                        <li>Do not take more than 2 tablets (300mg) in 24 hours</li>
+                        <li>Swallow tablet whole - do not chew, crush, or dissolve</li>
+                        <li>Can be taken with or without food</li>
+                        <li>Do not use for more than 14 days continuously unless directed by a doctor</li>
+                    </ul>
+                    
+                    <p><strong>Children under 12 years:</strong></p>
+                    <ul>
+                        <li>Not recommended for use in children without medical supervision</li>
+                    </ul>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Precautions</h3>
+                    <p><strong>Do not use if you:</strong></p>
+                    <ul>
+                        <li>Are allergic to ranitidine or other H2 blockers (such as cimetidine, famotidine, or nizatidine)</li>
+                        <li>Have trouble swallowing or persistent abdominal pain</li>
+                        <li>Have bloody or black stools</li>
+                        <li>Are vomiting blood or material that looks like coffee grounds</li>
+                    </ul>
+                    
+                    <p><strong>Ask a doctor before use if you have:</strong></p>
+                    <ul>
+                        <li>Had heartburn for more than 3 months</li>
+                        <li>Heartburn with lightheadedness, sweating, or dizziness</li>
+                        <li>Chest or shoulder pain with shortness of breath, sweating, pain spreading to arms, neck or shoulders, or lightheadedness</li>
+                        <li>Frequent chest pain</li>
+                        <li>Frequent wheezing, particularly with heartburn</li>
+                        <li>Unexplained weight loss</li>
+                        <li>Nausea or vomiting</li>
+                        <li>Stomach pain</li>
+                        <li>Kidney or liver disease</li>
+                    </ul>
+                    
+                    <p><strong>Ask a doctor or pharmacist before use if you are:</strong></p>
+                    <ul>
+                        <li>Taking other medications, as ranitidine may interact with certain drugs</li>
+                        <li>Taking a prescription medication for:
+                            <ul>
+                                <li>Anticoagulation (blood thinning)</li>
+                                <li>Anti-seizure drugs</li>
+                                <li>Diabetes</li>
+                                <li>Gout</li>
+                                <li>Arthritis</li>
+                                <li>Heart problems</li>
+                            </ul>
+                        </li>
+                        <li>Pregnant or breastfeeding</li>
+                    </ul>
+                    
+                    <p><strong>Stop use and ask a doctor if:</strong></p>
+                    <ul>
+                        <li>Your heartburn continues or worsens</li>
+                        <li>You need to take this product for more than 14 days</li>
+                        <li>You develop new or unexpected symptoms</li>
+                        <li>You experience confusion, depression, or hallucinations</li>
+                        <li>You develop yellowing of the skin or eyes (jaundice)</li>
+                        <li>You develop unusual bleeding or bruising</li>
+                    </ul>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Possible Side Effects</h3>
+                    <p>When taken as directed, ranitidine is generally well-tolerated. However, possible side effects may include:</p>
+                    
+                    <p><strong>Common side effects:</strong></p>
+                    <ul>
+                        <li>Headache</li>
+                        <li>Dizziness</li>
+                        <li>Constipation or diarrhea</li>
+                        <li>Nausea</li>
+                        <li>Stomach discomfort</li>
+                    </ul>
+                    
+                    <p><strong>Less common side effects:</strong></p>
+                    <ul>
+                        <li>Drowsiness</li>
+                        <li>Fatigue</li>
+                        <li>Insomnia</li>
+                        <li>Decreased sex drive</li>
+                        <li>Rash or itching</li>
+                        <li>Muscle or joint pain</li>
+                    </ul>
+                    
+                    <p><strong>Rare but serious side effects (seek immediate medical attention):</strong></p>
+                    <ul>
+                        <li>Allergic reactions (rash, itching, swelling, severe dizziness, trouble breathing)</li>
+                        <li>Confusion, agitation, depression, or hallucinations</li>
+                        <li>Blurred vision</li>
+                        <li>Unusual bleeding or bruising</li>
+                        <li>Severe stomach pain</li>
+                        <li>Yellowing of the skin or eyes (jaundice)</li>
+                        <li>Dark urine</li>
+                        <li>Fast, slow, or irregular heartbeat</li>
+                        <li>Hair loss</li>
+                        <li>Severe skin reactions</li>
+                    </ul>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Storage</h3>
+                    <ul>
+                        <li>Store at room temperature (20-25°C or 68-77°F)</li>
+                        <li>Keep away from moisture and heat</li>
+                        <li>Keep the container tightly closed</li>
+                        <li>Keep out of reach of children</li>
+                    </ul>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Drug Interactions</h3>
+                    <p>Ranitidine may interact with several medications. Always consult with a healthcare professional before taking ranitidine if you are taking any of the following:</p>
+                    <ul>
+                        <li>Blood thinners (such as warfarin)</li>
+                        <li>Medications that require stomach acid for absorption (such as ketoconazole, itraconazole, atazanavir)</li>
+                        <li>Procainamide (heart rhythm medication)</li>
+                        <li>Triazolam (sedative)</li>
+                        <li>Glipizide (diabetes medication)</li>
+                        <li>Medications that are affected by changes in stomach pH</li>
+                        <li>Medications that are processed by the liver</li>
+                    </ul>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Lifestyle and Diet Tips for Acid Reflux</h3>
+                    <p>In addition to taking Ranitidine as directed, these lifestyle changes may help manage acid reflux symptoms:</p>
+                    <ul>
+                        <li>Maintain a healthy weight</li>
+                        <li>Eat smaller, more frequent meals</li>
+                        <li>Avoid lying down for 2-3 hours after eating</li>
+                        <li>Elevate the head of your bed 6-8 inches</li>
+                        <li>Avoid trigger foods such as:
+                            <ul>
+                                <li>Spicy, fatty, or fried foods</li>
+                                <li>Citrus fruits and tomatoes</li>
+                                <li>Chocolate and mint</li>
+                                <li>Onions and garlic</li>
+                                <li>Carbonated beverages</li>
+                                <li>Coffee and alcohol</li>
+                            </ul>
+                        </li>
+                        <li>Quit smoking</li>
+                        <li>Avoid tight-fitting clothing around the waist</li>
+                        <li>Manage stress through relaxation techniques</li>
+                    </ul>
+                </div>
+                
+                <div class="product-section">
+                    <h3>When to Seek Medical Attention</h3>
+                    <p>While ranitidine is generally safe when used as directed, certain situations require prompt medical attention:</p>
+                    <ul>
+                        <li>If symptoms persist for more than 14 days or worsen</li>
+                        <li>If you experience severe or persistent abdominal pain</li>
+                        <li>If you have difficulty swallowing</li>
+                        <li>If you vomit blood or have black/tarry stools</li>
+                        <li>If you experience chest pain with shortness of breath, sweating, or pain spreading to the jaw, neck, or arm</li>
+                        <li>If you experience any severe side effects after taking ranitidine</li>
+                    </ul>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Important Information</h3>
+                    <p>Ranitidine provides relief from acid-related symptoms but does not immediately relieve heartburn. It typically begins working within an hour and provides relief for up to 12 hours. For immediate relief of heartburn, antacids may be more appropriate.</p>
+                    <p>Long-term or high-dose use of acid reducers, including ranitidine, may increase the risk of certain conditions, including bone fractures, vitamin B12 deficiency, and certain infections. Discuss with your healthcare provider if you need to use this medication for an extended period.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="related-products">
+    <div class="container">
+        <h2>Related Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="Omeprazole.webp" alt="Omeprazole">
+                </div>
+                <div class="product-info">
+                    <h3>Omeprazole</h3>
+                    <p class="category">Digestive Health</p>
+                    <p class="description">Treats frequent heartburn and acid reflux. Reduces stomach acid for 24-hour relief.</p>
+                    <div class="product-price">
+                        <span class="price">₱250.00</span>
+                    </div>
+                    <div class="product-actions">
+                        <a href="omeprazole-details.html" class="btn-small">View Details</a>
+                        <button class="btn-small btn-cart" onclick="addToCart(10)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="ALUMINUM-HYDROXIDE-MAGNESIUM-HYDROXIDE-SUSPENION-120ML.png" alt="Antacid">
+                </div>
+                <div class="product-info">
+                    <h3>Antacid</h3>
+                    <p class="category">Digestive Health</p>
+                    <p class="description">Fast-acting relief for heartburn, acid indigestion, and sour stomach. Available in tablets and liquid.</p>
+                    <div class="product-price">
+                        <span class="price">₱120.00</span>
+                    </div>
+                    <div class="product-actions">
+                        <a href="antacid-details.html" class="btn-small">View Details</a>
+                        <button class="btn-small btn-cart" onclick="addToCart(5)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="disclaimer">
+    <div class="container">
+        <h2>Important Notice</h2>
+        <p>The information provided on this website is for general informational purposes only and does not replace professional medical advice. Always consult with a healthcare professional before taking any medication, especially if you have existing health conditions or are taking other medications.</p>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>PharmaQuick</h3>
+                <p>Your trusted guide for over-the-counter medicines.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="health-tips.html">Health Tips</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="products.html?category=fever">Fever Relief</a></li>
+                    <li><a href="products.html?category=cough-cold">Cough & Cold</a></li>
+                    <li><a href="products.html?category=pain">Pain Relief</a></li>
+                    <li><a href="cart.html">Your Cart</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>University of Caloocan City<br>Congressional Rd Ext, Barangay 171<br>Caloocan, Metro Manila</p>
+                <p>Email: info@pharmaquick.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 PharmaQuick. All rights reserved. Developed by Attila P. Sabiniano</p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="cart.js"></script>
+<script>
+
+    const quantityInput = document.getElementById('quantity');
+    const decreaseBtn = document.querySelector('.decrease');
+    const increaseBtn = document.querySelector('.increase');
+    
+    decreaseBtn.addEventListener('click', function() {
+        let currentValue = parseInt(quantityInput.value);
+        if (currentValue > 1) {
+            quantityInput.value = currentValue - 1;
+        }
+    });
+    
+    increaseBtn.addEventListener('click', function() {
+        let currentValue = parseInt(quantityInput.value);
+        if (currentValue < 99) {
+            quantityInput.value = currentValue + 1;
+        }
+    });
+    
+
+    document.getElementById('addToCartBtn').addEventListener('click', function() {
+        const quantity = parseInt(document.getElementById('quantity').value);
+        const productId = 13; 
+        
+    
+        for (let i = 0; i < quantity; i++) {
+            addToCart(productId);
+        }
+        
+
+        alert(`Added ${quantity} Ranitidine to your cart!`);
+    });
+    
+
+    document.getElementById('buyNowBtn').addEventListener('click', function() {
+        const quantity = parseInt(document.getElementById('quantity').value);
+        const productId = 13; 
+        
+
+        for (let i = 0; i < quantity; i++) {
+            addToCart(productId);
+        }
+        
+
+        window.location.href = 'cart.html';
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melatonin - PharmaQuick</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="logo">
+            <img src="logo1.png" alt="PharmaQuick Logo" class="site-logo">
+            <div class="logo-text">
+                <h1>PharmaQuick</h1>
+                <p>Your OTC Medicine Guide</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="health-tips.html">Health Tips</a></li>
+                <li><a href="drug-guide.html">Drug Guide</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-icons">
+            <a href="cart.html" class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count" id="cartCount">0</span>
+            </a>
+            <a href="login.html" class="user-icon">
+                <i class="fas fa-user"></i>
+            </a>
+        </div>
+    </div>
+</header>
+
+<section class="product-details">
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> &gt; <a href="products.html">Products</a> &gt; Melatonin
+        </div>
+        
+        <div class="product-detail-content">
+            <div class="product-image-large">
+                <img src="now-melatonin-10mg-100-caps-supplements-now-foods-479644_1600x.webp" alt="Melatonin">
+            </div>
+            
+            <div class="product-info-detailed">
+                <h2>Melatonin 10mg Tablets</h2>
+                <p class="category">Sleep Aid</p>
+                
+                <div class="product-price">
+                    <span class="price">₱280.00</span>
+                    <span class="original-price">₱320.00</span>
+                </div>
+                
+                <div class="product-section">
+                    <p>Melatonin is a natural sleep aid that helps regulate sleep-wake cycles. This supplement may reduce the time it takes to fall asleep and improve overall sleep quality for those with occasional sleeplessness.</p>
+                </div>
+                
+                <div class="product-quantity">
+                    <label for="quantity">Quantity:</label>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn decrease">-</button>
+                        <input type="number" id="quantity" value="1" min="1" max="99" class="quantity-input">
+                        <button class="quantity-btn increase">+</button>
+                    </div>
+                </div>
+                
+                <div class="product-actions">
+                    <button class="btn" id="addToCartBtn">Add to Cart</button>
+                    <button class="btn btn-secondary" id="buyNowBtn" style="background-color: var(--success-color); border: none;">Buy Now</button>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Description</h3>
+                    <p>Melatonin is a hormone naturally produced by the pineal gland in the brain that helps regulate your body's sleep-wake cycle (circadian rhythm). As a supplement, melatonin can help address certain sleep problems, such as difficulty falling asleep, staying asleep, or adjusting to shift work. It may also help reduce the effects of jet lag when traveling across multiple time zones.</p>
+                    <p>Our Melatonin 10mg tablets are designed to help you fall asleep faster and improve sleep quality without causing the morning grogginess often associated with prescription sleep medications. This non-habit-forming supplement supports a natural sleep cycle and can be particularly helpful for those experiencing occasional sleeplessness.</p>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Active Ingredient</h3>
+                    <p>Each tablet contains 3mg of Melatonin.</p>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Uses</h3>
+                    <ul>
+                        <li>Helps reduce the time it takes to fall asleep</li>
+                        <li>May improve overall sleep quality</li>
+                        <li>Helps establish normal sleep patterns</li>
+                        <li>May help with jet lag symptoms when traveling across time zones</li>
+                        <li>Can assist with sleep difficulties related to shift work</li>
+                        <li>May help regulate sleep patterns in people with delayed sleep phase syndrome</li>
+                    </ul>
+                </div>
+                
+                <div class="product-section">
+                    <h3>How It Works</h3>
+                    <p>Melatonin works by:</p>
+                    <ul>
+                        <li>Mimicking the effects of the natural hormone melatonin produced by your body</li>
+                        <li>Binding to melatonin receptors in your brain, helping to regulate your sleep-wake cycle</li>
+                        <li>Signaling to your body that it's time to sleep</li>
+                        <li>Potentially reducing the time it takes to fall asleep</li>
+                        <li>Helping to reset your body's internal clock when it's been disrupted</li>
+                    </ul>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Dosage</h3>
+                    <p><strong>Adults:</strong></p>
+                    <ul>
+                        <li>Take one tablet (3mg) 30-60 minutes before bedtime</li>
+                        <li>Swallow tablet whole with water</li>
+                        <li>Do not exceed the recommended dose unless directed by a healthcare professional</li>
+                    </ul>
+                    
+                    <p><strong>For Jet Lag:</strong></p>
+                    <ul>
+                        <li>Take one tablet 30-60 minutes before bedtime at your destination</li>
+                        <li>Continue for 2-5 days as needed</li>
+                    </ul>
+                    
+                    <p><strong>Children:</strong></p>
+                    <ul>
+                        <li>Not recommended for children under 18 years without medical supervision</li>
+                    </ul>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Precautions</h3>
+                    <p><strong>Do not use if you have:</strong></p>
+                    <ul>
+                        <li>An autoimmune disorder</li>
+                        <li>A seizure disorder</li>
+                        <li>Depression</li>
+                        <li>Diabetes</li>
+                        <li>High blood pressure</li>
+                        <li>Bleeding disorders</li>
+                    </ul>
+                    
+                    <p><strong>Consult a healthcare professional before use if you:</strong></p>
+                    <ul>
+                        <li>Are pregnant or breastfeeding</li>
+                        <li>Have any medical conditions</li>
+                        <li>Are taking any medications, especially:
+                            <ul>
+                                <li>Blood thinners (anticoagulants)</li>
+                                <li>Immunosuppressants</li>
+                                <li>Diabetes medications</li>
+                                <li>Birth control pills</li>
+                                <li>Sedatives or sleep medications</li>
+                            </ul>
+                        </li>
+                        <li>Are planning to have surgery</li>
+                        <li>Are over 65 years of age</li>
+                    </ul>
+                    
+                    <p><strong>When using this product:</strong></p>
+                    <ul>
+                        <li>Avoid driving or operating machinery for 4-5 hours after taking melatonin</li>
+                        <li>Avoid alcohol, as it may increase drowsiness and reduce effectiveness</li>
+                        <li>Do not take with other sleep medications unless directed by a healthcare professional</li>
+                    </ul>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Possible Side Effects</h3>
+                    <p><strong>Common side effects:</strong></p>
+                    <ul>
+                        <li>Headache</li>
+                        <li>Dizziness</li>
+                        <li>Nausea</li>
+                        <li>Drowsiness</li>
+                        <li>Vivid dreams or nightmares</li>
+                    </ul>
+                    
+                    <p><strong>Less common side effects:</strong></p>
+                    <ul>
+                        <li>Short-term feelings of depression</li>
+                        <li>Mild tremor</li>
+                        <li>Mild anxiety</li>
+                        <li>Irritability</li>
+                        <li>Reduced alertness</li>
+                        <li>Confusion or disorientation</li>
+                        <li>Abdominal cramps</li>
+                    </ul>
+                    
+                    <p><strong>Stop use and consult a healthcare professional if:</strong></p>
+                    <ul>
+                        <li>You experience any severe or persistent side effects</li>
+                        <li>Your sleep problems worsen or continue for more than 2 weeks</li>
+                        <li>You experience new or worsening symptoms</li>
+                    </ul>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Storage</h3>
+                    <ul>
+                        <li>Store at room temperature (20-25°C or 68-77°F)</li>
+                        <li>Keep away from moisture, heat, and light</li>
+                        <li>Keep the container tightly closed</li>
+                        <li>Keep out of reach of children</li>
+                    </ul>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Sleep Hygiene Tips</h3>
+                    <p>For best results with melatonin, combine with good sleep habits:</p>
+                    <ul>
+                        <li>Maintain a regular sleep schedule (go to bed and wake up at the same time daily)</li>
+                        <li>Create a relaxing bedtime routine</li>
+                        <li>Keep your bedroom cool, dark, and quiet</li>
+                        <li>Avoid screens (phones, tablets, computers) for at least 1 hour before bedtime</li>
+                        <li>Avoid caffeine, alcohol, and large meals close to bedtime</li>
+                        <li>Exercise regularly, but not too close to bedtime</li>
+                        <li>Limit daytime naps to 30 minutes or less</li>
+                        <li>Manage stress through relaxation techniques like deep breathing or meditation</li>
+                    </ul>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Long-term Use</h3>
+                    <p>Melatonin is generally considered safe for short-term use. However, there is limited research on the long-term effects of melatonin supplementation. Consider the following:</p>
+                    <ul>
+                        <li>Use melatonin for short periods (a few days to a few weeks) when needed</li>
+                        <li>If sleep problems persist beyond 2 weeks, consult a healthcare professional</li>
+                        <li>Avoid becoming dependent on any sleep aid, including melatonin</li>
+                        <li>Address underlying causes of sleep problems when possible</li>
+                        <li>Consider periodic breaks from melatonin if using regularly</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="related-products">
+    <div class="container">
+        <h2>Related Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="multivitamins.webp" alt="Multivitamins">
+                </div>
+                <div class="product-info">
+                    <h3>Multivitamins (Kids)</h3>
+                    <p class="category">Vitamins and Supplements</p>
+                    <p class="description">Supports overall health by filling nutritional gaps. Helps boost energy, immunity, and daily wellness.</p>
+                    <div class="product-price">
+                        <span class="price">₱350.00</span>
+                    </div>
+                    <div class="product-actions">
+                        <a href="multivitamins-details.html" class="btn-small">View Details</a>
+                        <button class="btn-small btn-cart" onclick="addToCart(8)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="Electrolyte water.webp" alt="Electrolyte Water">
+                </div>
+                <div class="product-info">
+                    <h3>Electrolyte Water</h3>
+                    <p class="category">Vitamins and Supplements</p>
+                    <p class="description">Rehydrates and replenishes lost electrolytes to support hydration and energy.</p>
+                    <div class="product-price">
+                        <span class="price">₱120.00</span>
+                    </div>
+                    <div class="product-actions">
+                        <a href="electrolyte-water-details.html" class="btn-small">View Details</a>
+                        <button class="btn-small btn-cart" onclick="addToCart(3)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="disclaimer">
+    <div class="container">
+        <h2>Important Notice</h2>
+        <p>The information provided on this website is for general informational purposes only and does not replace professional medical advice. Always consult with a healthcare professional before taking any supplement, especially if you have existing health conditions or are taking medications.</p>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>PharmaQuick</h3>
+                <p>Your trusted guide for over-the-counter medicines.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="health-tips.html">Health Tips</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="products.html?category=fever">Fever Relief</a></li>
+                    <li><a href="products.html?category=cough-cold">Cough & Cold</a></li>
+                    <li><a href="products.html?category=pain">Pain Relief</a></li>
+                    <li><a href="cart.html">Your Cart</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>University of Caloocan City<br>Congressional Rd Ext, Barangay 171<br>Caloocan, Metro Manila</p>
+                <p>Email: info@pharmaquick.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 PharmaQuick. All rights reserved. Developed by Attila P. Sabiniano</p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="cart.js"></script>
+<script>
+
+    const quantityInput = document.getElementById('quantity');
+    const decreaseBtn = document.querySelector('.decrease');
+    const increaseBtn = document.querySelector('.increase');
+    
+    decreaseBtn.addEventListener('click', function() {
+        let currentValue = parseInt(quantityInput.value);
+        if (currentValue > 1) {
+            quantityInput.value = currentValue - 1;
+        }
+    });
+    
+    increaseBtn.addEventListener('click', function() {
+        let currentValue = parseInt(quantityInput.value);
+        if (currentValue < 99) {
+            quantityInput.value = currentValue + 1;
+        }
+    });
+    
+ 
+    document.getElementById('addToCartBtn').addEventListener('click', function() {
+        const quantity = parseInt(document.getElementById('quantity').value);
+        const productId =9; 
+        
+
+        for (let i = 0; i < quantity; i++) {
+            addToCart(productId);
+        }
+        
+
+        alert(`Added ${quantity} Melatonin to your cart!`);
+    });
+
+    document.getElementById('buyNowBtn').addEventListener('click', function() {
+        const quantity = parseInt(document.getElementById('quantity').value);
+        const productId = 9; 
+        
+
+        for (let i = 0; i < quantity; i++) {
+            addToCart(productId);
+        }
+   
+        window.location.href = 'cart.html';
+    });
+</script>
+</body>
+</html>

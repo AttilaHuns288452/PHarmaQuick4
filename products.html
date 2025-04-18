@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - PharmaQuick</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="logo">
+            <img src="logo1.png" alt="PharmaQuick Logo" class="site-logo">
+            <div class="logo-text">
+                <h1>PharmaQuick</h1>
+                <p>Your OTC Medicine Guide</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html"  class="active">Products</a></li>
+                <li><a href="health-tips.html">Health Tips</a></li>
+                <li><a href="drug-guide.html">Drug Guide</a></li>
+                <li><a href="about.html" >About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-icons">
+            <a href="cart.html" class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count" id="cartCount">0</span>
+            </a>
+            <a href="login.html" class="user-icon">
+                <i class="fas fa-user"></i>
+            </a>
+        </div>
+    </div>
+</header>
+
+
+    <section class="page-header">
+        <div class="container">
+            <h2>OTC Medicine Products</h2>
+            <p>Browse our comprehensive collection of over-the-counter medicines</p>
+        </div>
+    </section>
+
+    <section class="product-filters">
+        <div class="container">
+            <div class="filter-container">
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Search products...">
+                    <button id="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="filter-options">
+                    <div class="filter-group">
+                        <label for="category-filter">Category:</label>
+                        <select id="category-filter">
+                            <option value="all">All Categories</option>
+                            <option value="fever">Fever Relief</option>
+                            <option value="cough-cold">Cough & Cold</option>
+                            <option value="pain">Pain Relief</option>
+                            <option value="digestive">Digestive Health</option>
+                            <option value="allergy">Allergy Relief</option>
+                            <option value="Vitamins">Vitamins and Supplements</option>
+                            <option value="Sleep Aids">Sleep Aids</option>
+                            <option value="Tools">Tools</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="products-list">
+        <div class="container">
+            <div class="product-grid" id="products-container">
+
+              
+                <div class="product-card" data-category="fever pain">
+                    <div class="product-image">
+                        <img src="Paracetamol_120__04876.1607584025[1].webp" alt="Paracetamol">
+                    </div>
+                    <div class="product-info">
+                        <h3>RM PARACETAMOL 120 MG / 5 ML SYRUP</h3>
+                        <p class="category">Fever Relief, Pain Relief</p>
+                        <p class="description">Effective for reducing fever and relieving mild to moderate pain.</p>
+                        <a href="product-details.html?id=1" class="btn-small">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="cough-cold">
+                    <div class="product-image">
+                        <img src="Dextromethorphan.avif" alt="Robitussin-DM">
+                    </div>
+                    <div class="product-info">
+                        <h3>Robitussin-DM</h3>
+                        <p class="category">Cough & Cold</p>
+                        <p class="description">Temporarily relieves cough due to minor throat & bronchial irritation as may occur w/ a cold.
+                            Expectorant action to help loosen phlegm & thin bronchial secretions to make cough more productive.
+                            Helps relieve chest congestion.</p>
+                        <a href="robitussin-dm-details.html" class="btn-small">View Details</a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="Vitamins">
+                    <div class="product-image">
+                        <img src="Electrolyte water.webp" alt="Electrolyte Water">
+                    </div>
+                    <div class="product-info">
+                        <h3>Electrolyte Water</h3>
+                        <p class="category">Vitamins and Supplements</p>
+                        <p class="description">Rehydrates and replenishes lost electrolytes to support hydration and energy. Ideal for active lifestyles and recovery.</p>
+                        <a href="electrolyte-water-details.html" class="btn-small">View Details</a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="Tools">
+                    <div class="product-image">
+                        <img src="Emergency Kit.avif" alt="Emergency Kit">
+                    </div>
+                    <div class="product-info">
+                        <h3>Emergency Kit</h3>
+                        <p class="category">Tools</p>
+                        <p class="description">Contains basic items needed in an emergency. Every household should have at least one kit that can be used in case of calamities like earthquakes and typhoons.</p>
+                        <a href="emergency-kit-details.html" class="btn-small">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="digestive">
+                    <div class="product-image">
+                        <img src="ALUMINUM-HYDROXIDE-MAGNESIUM-HYDROXIDE-SUSPENION-120ML.png" alt="Antacid">
+                    </div>
+                    <div class="product-info">
+                        <h3>Antacid</h3>
+                        <p class="category">Digestive Health</p>
+                        <p class="description">Neutralizes stomach acid and relieves heartburn, indigestion, and upset stomach. Available in tablets and liquid form.</p>
+                        <a href="antacid-details.html" class="btn-small">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="digestive">
+                    <div class="product-image">
+                        <img src="Lansoprazole.webp" alt="Lansoprazole">
+                    </div>
+                    <div class="product-info">
+                        <h3>Lansoprazole</h3>
+                        <p class="category">Digestive Health</p>
+                        <p class="description">Reduces stomach acid to relieve heartburn, acid reflux, and ulcers. For short-term or maintenance treatment as prescribed.</p>
+                        <a href="lansoprazole-details.html" class="btn-small">View Details</a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="allergy">
+                    <div class="product-image">
+                        <img src="Loratadine.webp">
+                    </div>
+                    <div class="product-info">
+                        <h3>Loratadine</h3>
+                        <p class="category">Allergy Relief</p>
+                        <p class="description">Relieves sneezing, runny nose, and itchy eyes caused by allergies. Non-drowsy formula.</p>
+                        <a href="loratadine-details.html" class="btn-small">View Details</a>
+                    </div>
+                </div>
+
+
+                <div class="product-card" data-category="Vitamins and Supplements">
+                    <div class="product-image">
+                        <img src="multivitamins.webp" alt="Kids Multivitamin Gummies">
+                    </div>
+                    <div class="product-info">
+                        <h3>Kids Multivitamin Gummies</h3>
+                        <p class="category">Vitamins and Supplements</p>
+                        <p class="description">Delicious fruit-flavored gummy vitamins specially formulated for growing children. Contains essential vitamins and minerals to support healthy growth, development, and immune function.</p>
+                        <a href="multivitamins-kids-details.html" class="btn-small">View Details</a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="Sleep Aids">
+                    <div class="product-image">
+                        <img src="now-melatonin-10mg-100-caps-supplements-now-foods-479644_1600x.webp" alt="Melatonin">
+                    </div>
+                    <div class="product-info">
+                        <h3>Melatonin</h3>
+                        <p class="category">Vitamins and Supplements</p>
+                        <p class="description">Helps regulate sleep-wake cycle and improve sleep quality. Ideal for occasional sleeplessness.</p>
+                        <a href="melatonin-details.html" class="btn-small">View Details</a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="digestive">
+                    <div class="product-image">
+                        <img src="Omeprazole.webp" alt="Omeprazole">
+                    </div>
+                    <div class="product-info">
+                        <h3>Omeprazole</h3>
+                        <p class="category">Digestive Health</p>
+                        <p class="description">Reduces stomach acid to relieve heartburn, acid reflux, and ulcers. For short-term or maintenance use as directed.</p>
+                        <a href="omeprazole-details.html" class="btn-small">View Details</a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="fever pain">
+                    <div class="product-image">
+                        <img src="paracetamol-500mg-tablet.jpg" alt="Paracetamol 500mg">
+                    </div>
+                    <div class="product-info">
+                        <h3>Paracetamol Tablet</h3>
+                        <p class="category">Fever Relief, Pain Relief</p>
+                        <p class="description">Effective for reducing fever and relieving mild to moderate pain.</p>
+                        <a href="paracetamol-500mg-details.html" class="btn-small">View Details</a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="cough-cold">
+                    <div class="product-image">
+                        <img src="Phenylephrine.jpg" alt="Phenylephrine">
+                    </div>
+                    <div class="product-info">
+                        <h3>Phenylephrine</h3>
+                        <p class="category">Cough & Cold</p>
+                        <p class="description">Relieves nasal congestion by narrowing blood vessels in the nasal passages. For temporary relief of stuffy nose due to colds or allergies.</p>
+                        <a href="phenylephrine-details.html" class="btn-small">View Details</a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="digestive">
+                    <div class="product-image">
+                        <img src="Ranitidine.png" alt="Ranitidine">
+                    </div>
+                    <div class="product-info">
+                        <h3>Ranitidine</h3>
+                        <p class="category">Digestive Health</p>
+                        <p class="description">Reduces stomach acid to relieve and prevent heartburn, acid indigestion, and ulcers. For short-term use as directed.</p>
+                        <a href="ranitidine-details.html" class="btn-small">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="disclaimer">
+        <div class="container">
+            <h2>Important Notice</h2>
+            <p>The information provided on this website is for general informational purposes only and does not replace professional medical advice. Always consult with a healthcare professional before taking any medication, especially if you have existing health conditions or are taking other medications.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PharmaQuick</h3>
+                    <p>Your trusted guide for over-the-counter medicines.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>University of Caloocan City<br>Congressional Rd Ext, Barangay 171<br>Caloocan, Metro Manila</p>
+                    <p>Email: info@pharmaquick.com</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 PharmaQuick. All rights reserved. Developed by Attila P. Sabiniano</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="products.js"></script>
+    <script src="script.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>
+

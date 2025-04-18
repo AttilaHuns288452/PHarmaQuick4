@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phenylephrine - PharmaQuick</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="logo">
+            <img src="logo1.png" alt="PharmaQuick Logo" class="site-logo">
+            <div class="logo-text">
+                <h1>PharmaQuick</h1>
+                <p>Your OTC Medicine Guide</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="health-tips.html">Health Tips</a></li>
+                <li><a href="drug-guide.html">Drug Guide</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-icons">
+            <a href="cart.html" class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count" id="cartCount">0</span>
+            </a>
+            <a href="login.html" class="user-icon">
+                <i class="fas fa-user"></i>
+            </a>
+        </div>
+    </div>
+</header>
+
+<section class="product-details">
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> &gt; <a href="products.html">Products</a> &gt; Phenylephrine
+        </div>
+        
+        <div class="product-detail-content">
+            <div class="product-image-large">
+                <img src="Phenylephrine.jpg" alt="Phenylephrine">
+            </div>
+            
+            <div class="product-info-detailed">
+                <h2>Phenylephrine 10mg Tablets</h2>
+                <p class="category">Cough & Cold</p>
+                
+                <div class="product-price">
+                    <span class="price">₱120.00</span>
+                    <span class="original-price">₱145.00</span>
+                </div>
+                
+                <div class="product-section">
+                    <p>Phenylephrine is an effective nasal decongestant that provides temporary relief from nasal congestion due to colds, allergies, and sinus conditions. It works by narrowing blood vessels in the nasal passages, reducing swelling and congestion.</p>
+                </div>
+                
+                <div class="product-quantity">
+                    <label for="quantity">Quantity:</label>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn decrease">-</button>
+                        <input type="number" id="quantity" value="1" min="1" max="99" class="quantity-input">
+                        <button class="quantity-btn increase">+</button>
+                    </div>
+                </div>
+                
+                <div class="product-actions">
+                    <button class="btn" id="addToCartBtn">Add to Cart</button>
+                    <button class="btn btn-secondary" id="buyNowBtn" style="background-color: var(--success-color); border: none;">Buy Now</button>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Description</h3>
+                    <p>Phenylephrine is a decongestant that belongs to a class of medications called sympathomimetic amines. It works by stimulating certain receptors in the blood vessels of the nasal passages, causing them to constrict (narrow). This reduces blood flow to the nasal passages, which decreases swelling and congestion.</p>
+                    <p>Our Phenylephrine 10mg tablets provide effective relief from nasal congestion associated with the common cold, hay fever, upper respiratory allergies, and sinusitis. Unlike some other decongestants, phenylephrine is less likely to cause insomnia or increased blood pressure when used as directed.</p>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Active Ingredient</h3>
+                    <p>Each tablet contains 10mg of Phenylephrine Hydrochloride.</p>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Uses</h3>
+                    <ul>
+                        <li>Temporarily relieves nasal congestion due to:
+                            <ul>
+                                <li>Common cold</li>
+                                <li>Hay fever</li>
+                                <li>Upper respiratory allergies</li>
+                                <li>Sinusitis</li>
+                            </ul>
+                        </li>
+                        <li>Helps clear sinus passages</li>
+                        <li>Reduces swelling of nasal passages</li>
+                        <li>Relieves sinus pressure</li>
+                        <li>Promotes nasal and/or sinus drainage</li>
+                    </ul>
+                </div>
+                
+                <div class="product-section">
+                    <h3>How It Works</h3>
+                    <p>Phenylephrine works by:</p>
+                    <ul>
+                        <li>Stimulating alpha-1 adrenergic receptors in blood vessels of the nasal mucosa</li>
+                        <li>Causing vasoconstriction (narrowing) of blood vessels in the nasal passages</li>
+                        <li>Reducing blood flow to the nasal mucous membranes</li>
+                        <li>Decreasing nasal tissue swelling and congestion</li>
+                        <li>Improving airflow through the nasal passages</li>
+                        <li>Promoting drainage of sinus secretions</li>
+                    </ul>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Dosage</h3>
+                    <p><strong>Adults and children 12 years and over:</strong></p>
+                    <ul>
+                        <li>1 tablet (10mg) every 4 hours as needed</li>
+                        <li>Do not take more than 6 tablets (60mg) in 24 hours</li>
+                        <li>Take with a full glass of water</li>
+                        <li>Do not use for more than 7 days unless directed by a doctor</li>
+                    </ul>
+                    
+                    <p><strong>Children 6 to under 12 years:</strong></p>
+                    <ul>
+                        <li>½ tablet (5mg) every 4 hours as needed</li>
+                        <li>Do not give more than 6 doses (30mg) in 24 hours</li>
+                        <li>Do not use for more than 5 days unless directed by a doctor</li>
+                    </ul>
+                    
+                    <p><strong>Children under 6 years:</strong></p>
+                    <ul>
+                        <li>Not recommended</li>
+                        <li>Consult a doctor</li>
+                    </ul>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Precautions</h3>
+                    <p><strong>Do not use if you:</strong></p>
+                    <ul>
+                        <li>Are allergic to phenylephrine or any ingredients in this product</li>
+                        <li>Have high blood pressure</li>
+                        <li>Have heart disease</li>
+                        <li>Have thyroid disease</li>
+                        <li>Have diabetes</li>
+                        <li>Have difficulty urinating due to enlargement of the prostate gland</li>
+                        <li>Are taking prescription monoamine oxidase inhibitor (MAOI) drugs (certain drugs for depression, psychiatric or emotional conditions, or Parkinson's disease)</li>
+                    </ul>
+                    
+                    <p><strong>Ask a doctor before use if you have:</strong></p>
+                    <ul>
+                        <li>High blood pressure</li>
+                        <li>Heart disease</li>
+                        <li>Thyroid disease</li>
+                        <li>Diabetes</li>
+                        <li>Trouble urinating due to an enlarged prostate gland</li>
+                        <li>Glaucoma</li>
+                    </ul>
+                    
+                    <p><strong>Ask a doctor or pharmacist before use if you are:</strong></p>
+                    <ul>
+                        <li>Taking any other drug</li>
+                        <li>Taking sedatives or tranquilizers</li>
+                        <li>Taking medications for high blood pressure or depression</li>
+                        <li>Pregnant or breastfeeding</li>
+                    </ul>
+                    
+                    <p><strong>Stop use and ask a doctor if:</strong></p>
+                    <ul>
+                        <li>Nervousness, dizziness, or sleeplessness occurs</li>
+                        <li>Symptoms do not improve within 7 days or are accompanied by fever</li>
+                        <li>New symptoms occur</li>
+                        <li>Redness or swelling is present</li>
+                    </ul>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Possible Side Effects</h3>
+                    <p>When taken as directed, phenylephrine usually has minimal side effects. However, possible side effects may include:</p>
+                    
+                    <p><strong>Common side effects:</strong></p>
+                    <ul>
+                        <li>Nervousness</li>
+                        <li>Restlessness</li>
+                        <li>Excitability</li>
+                        <li>Dizziness</li>
+                        <li>Headache</li>
+                        <li>Increased blood pressure</li>
+                        <li>Nausea</li>
+                        <li>Difficulty sleeping</li>
+                    </ul>
+                    
+                    <p><strong>Less common side effects:</strong></p>
+                    <ul>
+                        <li>Anxiety</li>
+                        <li>Tremors</li>
+                        <li>Weakness</li>
+                        <li>Palpitations</li>
+                        <li>Rapid heartbeat</li>
+                        <li>Difficulty urinating</li>
+                    </ul>
+                    
+                    <p><strong>Rare but serious side effects (seek immediate medical attention):</strong></p>
+                    <ul>
+                        <li>Severe headache</li>
+                        <li>Chest pain</li>
+                        <li>Irregular or fast heartbeat</li>
+                        <li>Shortness of breath</li>
+                        <li>Confusion</li>
+                        <li>Hallucinations</li>
+                        <li>Seizures</li>
+                        <li>Severe allergic reaction (rash, itching, swelling, severe dizziness, trouble breathing)</li>
+                    </ul>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Storage</h3>
+                    <ul>
+                        <li>Store at room temperature (20-25°C or 68-77°F)</li>
+                        <li>Keep away from moisture and heat</li>
+                        <li>Keep the container tightly closed</li>
+                        <li>Keep out of reach of children</li>
+                    </ul>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Drug Interactions</h3>
+                    <p>Phenylephrine may interact with several medications. Always consult with a healthcare professional before taking phenylephrine if you are taking any of the following:</p>
+                    <ul>
+                        <li>Monoamine oxidase inhibitors (MAOIs) - can cause dangerous increases in blood pressure</li>
+                        <li>Beta-blockers (such as propranolol, metoprolol) - may reduce effectiveness of both medications</li>
+                        <li>Other decongestants (including those in cold and allergy products)</li>
+                        <li>Medications for high blood pressure</li>
+                        <li>Tricyclic antidepressants</li>
+                        <li>Digitalis/digoxin (heart medication)</li>
+                        <li>Ergot alkaloids (used for migraines)</li>
+                        <li>Thyroid medications</li>
+                    </ul>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Additional Tips for Managing Nasal Congestion</h3>
+                    <p>In addition to taking phenylephrine as directed, these measures may help relieve nasal congestion:</p>
+                    <ul>
+                        <li>Stay hydrated by drinking plenty of fluids</li>
+                        <li>Use a humidifier or vaporizer to add moisture to the air</li>
+                        <li>Use saline nasal sprays or rinses to moisturize nasal passages and clear mucus</li>
+                        <li>Take hot showers or inhale steam from a bowl of hot water (carefully)</li>
+                        <li>Apply warm compresses to your face to relieve sinus pressure</li>
+                        <li>Elevate your head while sleeping to help drainage</li>
+                        <li>Avoid known allergens that trigger congestion</li>
+                        <li>Avoid smoking and secondhand smoke</li>
+                    </ul>
+                </div>
+                
+                <div class="product-section">
+                    <h3>When to Seek Medical Attention</h3>
+                    <p>While phenylephrine is generally safe when used as directed, certain situations require prompt medical attention:</p>
+                    <ul>
+                        <li>If symptoms persist for more than 7 days or worsen</li>
+                        <li>If you develop a high fever, severe headache, or rash</li>
+                        <li>If you experience chest pain, rapid or irregular heartbeat, or difficulty breathing</li>
+                        <li>If you have persistent nasal congestion without other cold symptoms</li>
+                        <li>If you have green or yellow nasal discharge, which may indicate a bacterial infection</li>
+                        <li>If you experience severe side effects after taking phenylephrine</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="related-products">
+    <div class="container">
+        <h2>Related Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="Paracetamol_120__04876.1607584025[1].webp" alt="Paracetamol">
+                </div>
+                <div class="product-info">
+                    <h3>RM PARACETAMOL 120 MG / 5 ML SYRUP</h3>
+                    <p class="category">Fever Relief, Pain Relief</p>
+                    <p class="description">Effective for reducing fever and relieving mild to moderate pain.</p>
+                    <div class="product-price">
+                        <span class="price">₱45.00</span>
+                    </div>
+                    <div class="product-actions">
+                        <a href="product-details.html" class="btn-small">View Details</a>
+                        <button class="btn-small btn-cart" onclick="addToCart(1)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="Dextromethorphan.avif" alt="Phenylephrine">
+                </div>
+                <div class="product-info">
+                    <h3>Robitussin-DM</h3>
+                    <p class="category">Cough & Cold</p>
+                    <p class="description">Temporarily relieves cough due to minor throat & bronchial irritation as may occur w/ a cold. Expectorant action to help loosen phlegm & thin bronchial secretions to make cough more productive. Helps relieve chest congestion.</p>
+                    <div class="product-price">
+                        <span class="price">₱137.00</span>
+                    </div>
+                    <div class="product-actions">
+                        <a href="robitussin-dm-details.html" class="btn-small">View Details</a>
+                        <button class="btn-small btn-cart" onclick="addToCart(2)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="disclaimer">
+    <div class="container">
+        <h2>Important Notice</h2>
+        <p>The information provided on this website is for general informational purposes only and does not replace professional medical advice. Always consult with a healthcare professional before taking any medication, especially if you have existing health conditions or are taking other medications.</p>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>PharmaQuick</h3>
+                <p>Your trusted guide for over-the-counter medicines.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="health-tips.html">Health Tips</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="products.html?category=fever">Fever Relief</a></li>
+                    <li><a href="products.html?category=cough-cold">Cough & Cold</a></li>
+                    <li><a href="products.html?category=pain">Pain Relief</a></li>
+                    <li><a href="cart.html">Your Cart</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>University of Caloocan City<br>Congressional Rd Ext, Barangay 171<br>Caloocan, Metro Manila</p>
+                <p>Email: info@pharmaquick.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 PharmaQuick. All rights reserved. Developed by Attila P. Sabiniano</p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="cart.js"></script>
+<script>
+
+    const quantityInput = document.getElementById('quantity');
+    const decreaseBtn = document.querySelector('.decrease');
+    const increaseBtn = document.querySelector('.increase');
+    
+    decreaseBtn.addEventListener('click', function() {
+        let currentValue = parseInt(quantityInput.value);
+        if (currentValue > 1) {
+            quantityInput.value = currentValue - 1;
+        }
+    });
+    
+    increaseBtn.addEventListener('click', function() {
+        let currentValue = parseInt(quantityInput.value);
+        if (currentValue < 99) {
+            quantityInput.value = currentValue + 1;
+        }
+    });
+    
+
+    document.getElementById('addToCartBtn').addEventListener('click', function() {
+        const quantity = parseInt(document.getElementById('quantity').value);
+        const productId = 12; 
+        
+
+        for (let i = 0; i < quantity; i++) {
+            addToCart(productId);
+        }
+        
+
+        alert(`Added ${quantity} Phenylephrine to your cart!`);
+    });
+    
+
+    document.getElementById('buyNowBtn').addEventListener('click', function() {
+        const quantity = parseInt(document.getElementById('quantity').value);
+        const productId = 12; 
+        
+
+        for (let i = 0; i < quantity; i++) {
+            addToCart(productId);
+        }
+        
+
+        window.location.href = 'cart.html';
+    });
+</script>
+</body>
+</html>

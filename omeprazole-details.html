@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omeprazole - PharmaQuick</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="logo">
+            <img src="logo1.png" alt="PharmaQuick Logo" class="site-logo">
+            <div class="logo-text">
+                <h1>PharmaQuick</h1>
+                <p>Your OTC Medicine Guide</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="health-tips.html">Health Tips</a></li>
+                <li><a href="drug-guide.html">Drug Guide</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-icons">
+            <a href="cart.html" class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count" id="cartCount">0</span>
+            </a>
+            <a href="login.html" class="user-icon">
+                <i class="fas fa-user"></i>
+            </a>
+        </div>
+    </div>
+</header>
+
+<section class="product-details">
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> &gt; <a href="products.html">Products</a> &gt; Omeprazole
+        </div>
+        
+        <div class="product-detail-content">
+            <div class="product-image-large">
+                <img src="Omeprazole.webp" alt="Omeprazole">
+            </div>
+            
+            <div class="product-info-detailed">
+                <h2>Omeprazole 20mg Delayed-Release Capsules</h2>
+                <p class="category">Digestive Health</p>
+                
+                <div class="product-price">
+                    <span class="price">₱250.00</span>
+                    <span class="original-price">₱295.00</span>
+                </div>
+                
+                <div class="product-section">
+                    <p>Omeprazole is a proton pump inhibitor (PPI) that effectively treats frequent heartburn, acid reflux, and other conditions caused by excess stomach acid. One capsule provides 24-hour relief from acid-related symptoms.</p>
+                </div>
+                
+                <div class="product-quantity">
+                    <label for="quantity">Quantity:</label>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn decrease">-</button>
+                        <input type="number" id="quantity" value="1" min="1" max="99" class="quantity-input">
+                        <button class="quantity-btn increase">+</button>
+                    </div>
+                </div>
+                
+                <div class="product-actions">
+                    <button class="btn" id="addToCartBtn">Add to Cart</button>
+                    <button class="btn btn-secondary" id="buyNowBtn" style="background-color: var(--success-color); border: none;">Buy Now</button>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Description</h3>
+                    <p>Omeprazole belongs to a class of medications called proton pump inhibitors (PPIs). It works by decreasing the amount of acid produced in the stomach by blocking the enzyme in the wall of the stomach that produces acid. This reduction in stomach acid helps alleviate symptoms associated with acid-related conditions and allows damaged tissue in the esophagus, stomach, and duodenum to heal.</p>
+                    <p>Our Omeprazole 20mg delayed-release capsules are designed to bypass the stomach and dissolve in the small intestine, ensuring the medication reaches the right location for maximum effectiveness. Each capsule provides 24-hour relief from acid-related symptoms with just one daily dose, making it convenient for those who suffer from frequent heartburn or acid reflux.</p>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Active Ingredient</h3>
+                    <p>Each delayed-release capsule contains 20mg of Omeprazole.</p>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Uses</h3>
+                    <ul>
+                        <li>Treats frequent heartburn (occurring 2 or more days a week)</li>
+                        <li>Relieves symptoms of gastroesophageal reflux disease (GERD)</li>
+                        <li>Heals acid-related damage to the esophagus (erosive esophagitis)</li>
+                        <li>Reduces stomach acid to prevent or treat stomach and intestinal ulcers</li>
+                        <li>Helps manage conditions where the stomach produces too much acid, such as Zollinger-Ellison syndrome</li>
+                        <li>May be used as part of a combination therapy to treat H. pylori infection (under medical supervision)</li>
+                    </ul>
+                </div>
+                
+                <div class="product-section">
+                    <h3>How It Works</h3>
+                    <p>Omeprazole works by:</p>
+                    <ul>
+                        <li>Blocking the hydrogen-potassium adenosine triphosphatase enzyme system (the "proton pump") in gastric parietal cells</li>
+                        <li>Suppressing the final step in stomach acid production</li>
+                        <li>Reducing the amount of acid in the stomach by up to 90%</li>
+                        <li>Providing relief from acid-related symptoms for a full 24 hours with each dose</li>
+                        <li>Allowing damaged tissue in the digestive tract to heal by reducing acid exposure</li>
+                    </ul>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Dosage</h3>
+                    <p><strong>For adults 18 years and older:</strong></p>
+                    <ul>
+                        <li>Take one capsule (20mg) with a glass of water daily, in the morning before eating</li>
+                        <li>Swallow the capsule whole - do not crush, chew, or open the capsule</li>
+                        <li>For best results, take consistently at the same time each day</li>
+                        <li>It may take 1-4 days for full effect, although some people experience relief on the first day</li>
+                        <li>Do not take for more than 14 days continuously unless directed by a doctor</li>
+                        <li>If needed, a 14-day course may be repeated once every 4 months</li>
+                    </ul>
+                    
+                    <p><strong>Children under 18 years:</strong></p>
+                    <ul>
+                        <li>Not recommended for use in children without medical supervision</li>
+                    </ul>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Precautions</h3>
+                    <p><strong>Do not use if you:</strong></p>
+                    <ul>
+                        <li>Are allergic to omeprazole or any other proton pump inhibitor (PPI)</li>
+                        <li>Have trouble or pain swallowing food, vomiting with blood, or bloody or black stools</li>
+                        <li>Have heartburn with lightheadedness, sweating, or dizziness</li>
+                        <li>Have chest or shoulder pain with shortness of breath, sweating, pain spreading to arms, neck or shoulders, or lightheadedness</li>
+                        <li>Have been using an antacid for more than 3 months to control symptoms</li>
+                    </ul>
+                    
+                    <p><strong>Ask a doctor before use if you have:</strong></p>
+                    <ul>
+                        <li>Had heartburn for over 3 months</li>
+                        <li>Heartburn with unexplained weight loss</li>
+                        <li>Nausea or vomiting</li>
+                        <li>Stomach pain</li>
+                        <li>Liver or kidney disease</li>
+                        <li>Low magnesium levels</li>
+                        <li>Osteoporosis or risk factors for bone fractures</li>
+                    </ul>
+                    
+                    <p><strong>Ask a doctor or pharmacist before use if you are:</strong></p>
+                    <ul>
+                        <li>Taking warfarin (blood-thinning medicine)</li>
+                        <li>Taking prescription antifungal or anti-yeast medicines</li>
+                        <li>Taking diazepam (anxiety medicine)</li>
+                        <li>Taking digoxin (heart medicine)</li>
+                        <li>Taking tacrolimus or mycophenolate mofetil (immune system medicines)</li>
+                        <li>Taking any other medications, as omeprazole may interact with many drugs</li>
+                    </ul>
+                    
+                    <p><strong>Stop use and ask a doctor if:</strong></p>
+                    <ul>
+                        <li>Your heartburn continues or worsens</li>
+                        <li>You need to take this product for more than 14 days</li>
+                        <li>You need to take more than 1 course of treatment every 4 months</li>
+                        <li>You develop diarrhea, especially if it's watery or bloody</li>
+                        <li>You experience new or worsening joint pain</li>
+                        <li>You develop a rash on your cheeks or arms that gets worse in the sun</li>
+                    </ul>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Possible Side Effects</h3>
+                    <p><strong>Common side effects:</strong></p>
+                    <ul>
+                        <li>Headache</li>
+                        <li>Abdominal pain</li>
+                        <li>Nausea</li>
+                        <li>Diarrhea</li>
+                        <li>Vomiting</li>
+                        <li>Gas</li>
+                        <li>Constipation</li>
+                    </ul>
+                    
+                    <p><strong>Less common side effects:</strong></p>
+                    <ul>
+                        <li>Dizziness</li>
+                        <li>Rash</li>
+                        <li>Fatigue</li>
+                        <li>Vitamin B12 deficiency (with long-term use)</li>
+                        <li>Low magnesium levels (with long-term use)</li>
+                        <li>Increased risk of bone fractures (with long-term use)</li>
+                        <li>Increased risk of certain intestinal infections</li>
+                    </ul>
+                    
+                    <p><strong>Rare but serious side effects (seek immediate medical attention):</strong></p>
+                    <ul>
+                        <li>Severe allergic reactions (rash, itching, swelling, severe dizziness, trouble breathing)</li>
+                        <li>Severe stomach pain</li>
+                        <li>Persistent diarrhea, especially if bloody</li>
+                        <li>Unusual tiredness or weakness</li>
+                        <li>Muscle spasms or cramps</li>
+                        <li>Irregular heartbeat</li>
+                        <li>Seizures</li>
+                    </ul>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Storage</h3>
+                    <ul>
+                        <li>Store at room temperature (20-25°C or 68-77°F)</li>
+                        <li>Keep away from moisture and heat</li>
+                        <li>Keep the container tightly closed</li>
+                        <li>Keep out of reach of children</li>
+                    </ul>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Lifestyle and Diet Tips for Acid Reflux</h3>
+                    <p>In addition to taking Omeprazole as directed, these lifestyle changes may help manage acid reflux symptoms:</p>
+                    <ul>
+                        <li>Maintain a healthy weight</li>
+                        <li>Eat smaller, more frequent meals</li>
+                        <li>Avoid lying down for 2-3 hours after eating</li>
+                        <li>Elevate the head of your bed 6-8 inches</li>
+                        <li>Avoid trigger foods such as:
+                            <ul>
+                                <li>Spicy, fatty, or fried foods</li>
+                                <li>Citrus fruits and tomatoes</li>
+                                <li>Chocolate and mint</li>
+                                <li>Onions and garlic</li>
+                                <li>Carbonated beverages</li>
+                                <li>Coffee and alcohol</li>
+                            </ul>
+                        </li>
+                        <li>Quit smoking</li>
+                        <li>Avoid tight-fitting clothing around the waist</li>
+                        <li>Manage stress through relaxation techniques</li>
+                    </ul>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Long-term Considerations</h3>
+                    <p>While Omeprazole is effective for short-term treatment of acid-related conditions, long-term use should be discussed with a healthcare provider due to potential risks including:</p>
+                    <ul>
+                        <li>Vitamin and mineral deficiencies (particularly vitamin B12, magnesium, calcium)</li>
+                        <li>Increased risk of certain infections</li>
+                        <li>Potential increased risk of bone fractures</li>
+                        <li>Possible kidney problems</li>
+                    </ul>
+                    <p>If you require acid-reducing medication for more than 14 days or experience recurring symptoms, consult with a healthcare provider to determine the underlying cause and appropriate treatment plan.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="related-products">
+    <div class="container">
+        <h2>Related Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="ALUMINUM-HYDROXIDE-MAGNESIUM-HYDROXIDE-SUSPENION-120ML.png" alt="Antacid">
+                </div>
+                <div class="product-info">
+                    <h3>Antacid</h3>
+                    <p class="category">Digestive Health</p>
+                    <p class="description">Neutralizes stomach acid and relieves heartburn, indigestion, and upset stomach. Available in tablets and liquid form.</p>
+                    <div class="product-price">
+                        <span class="price">₱75.00</span>
+                    </div>
+                    <div class="product-actions">
+                        <a href="antacid-details.html" class="btn-small">View Details</a>
+                        <button class="btn-small btn-cart" onclick="addToCart(5)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="Lansoprazole.webp" alt="Omeprazole">
+                </div>
+                <div class="product-info">
+                    <h3>Lansoprazole</h3>
+                    <p class="category">Digestive Health</p>
+                    <p class="description">Reduces stomach acid to relieve heartburn, acid reflux, and ulcers.</p>
+                    <div class="product-price">
+                        <span class="price">₱120.00</span>
+                    </div>
+                    <div class="product-actions">
+                        <a href="omeprazole-details.html" class="btn-small">View Details</a>
+                        <button class="btn-small btn-cart" onclick="addToCart(6)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="disclaimer">
+    <div class="container">
+        <h2>Important Notice</h2>
+        <p>The information provided on this website is for general informational purposes only and does not replace professional medical advice. Always consult with a healthcare professional before taking any medication, especially if you have existing health conditions or are taking other medications.</p>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>PharmaQuick</h3>
+                <p>Your trusted guide for over-the-counter medicines.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="health-tips.html">Health Tips</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="products.html?category=fever">Fever Relief</a></li>
+                    <li><a href="products.html?category=cough-cold">Cough & Cold</a></li>
+                    <li><a href="products.html?category=pain">Pain Relief</a></li>
+                    <li><a href="cart.html">Your Cart</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>University of Caloocan City<br>Congressional Rd Ext, Barangay 171<br>Caloocan, Metro Manila</p>
+                <p>Email: info@pharmaquick.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 PharmaQuick. All rights reserved. Developed by Attila P. Sabiniano</p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="cart.js"></script>
+<script>
+
+    const quantityInput = document.getElementById('quantity');
+    const decreaseBtn = document.querySelector('.decrease');
+    const increaseBtn = document.querySelector('.increase');
+    
+    decreaseBtn.addEventListener('click', function() {
+        let currentValue = parseInt(quantityInput.value);
+        if (currentValue > 1) {
+            quantityInput.value = currentValue - 1;
+        }
+    });
+    
+    increaseBtn.addEventListener('click', function() {
+        let currentValue = parseInt(quantityInput.value);
+        if (currentValue < 99) {
+            quantityInput.value = currentValue + 1;
+        }
+    });
+
+    document.getElementById('addToCartBtn').addEventListener('click', function() {
+        const quantity = parseInt(document.getElementById('quantity').value);
+        const productId = 10; 
+        
+        
+        for (let i = 0; i < quantity; i++) {
+            addToCart(productId);
+        }
+        
+       
+        alert(`Added ${quantity} Omeprazole to your cart!`);
+    });
+    
+  
+    document.getElementById('buyNowBtn').addEventListener('click', function() {
+        const quantity = parseInt(document.getElementById('quantity').value);
+        const productId = 10; 
+        
+   
+        for (let i = 0; i < quantity; i++) {
+            addToCart(productId);
+        }
+        
+
+        window.location.href = 'cart.html';
+    });
+</script>
+</body>
+</html>

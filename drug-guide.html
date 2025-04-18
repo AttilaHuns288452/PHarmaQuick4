@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drug Guide - PharmaQuick</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+<header>
+    <div class="container">
+        <div class="logo">
+            <img src="logo1.png" alt="PharmaQuick Logo" class="site-logo">
+            <div class="logo-text">
+                <h1>PharmaQuick</h1>
+                <p>Your OTC Medicine Guide</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="health-tips.html">Health Tips</a></li>
+                <li><a href="drug-guide.html"  class="active" >Drug Guide </a></li>
+                <li><a href="about.html" >About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-icons">
+            <a href="cart.html" class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count" id="cartCount">0</span>
+            </a>
+            <a href="login.html" class="user-icon">
+                <i class="fas fa-user"></i>
+            </a>
+        </div>
+    </div>
+</header>
+
+    <section class="page-header">
+        <div class="container">
+            <h2>Drug Guide</h2>
+            <p>Understanding different types of over-the-counter medications</p>
+        </div>
+    </section>
+
+    <section class="drug-guide-content">
+        <div class="container">
+            <div class="drug-guide-intro">
+                <h3>Understanding OTC Medications</h3>
+                <p>Over-the-counter (OTC) medications are drugs that can be purchased without a prescription. They are generally considered safe and effective when used according to their labeling instructions. This guide provides information about common types of OTC medications, their uses, and general considerations.</p>
+                <div class="disclaimer-box">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <p><strong>Important:</strong> This guide is for informational purposes only and does not replace professional medical advice. Always read product labels carefully and consult with a healthcare professional before taking any medication, especially if you have existing health conditions or are taking other medications.</p>
+                </div>
+            </div>
+
+            <div class="drug-categories">
+                <div class="drug-category" id="pain-relievers">
+                    <div class="category-icon">
+                        <i class="fas fa-pills"></i>
+                    </div>
+                    <div class="category-content">
+                        <h3>Pain Relievers (Analgesics)</h3>
+                        <p>Pain relievers help reduce or relieve headaches, muscle aches, arthritis, backaches, and fevers. Common types include:</p>
+                        <div class="drug-types">
+                            <div class="drug-type">
+                                <h4>Acetaminophen (e.g., Paracetamol)</h4>
+                                <p><strong>Uses:</strong> Reduces pain and fever.</p>
+                                <p><strong>How it works:</strong> Blocks pain signals in the brain.</p>
+                                <p><strong>Considerations:</strong> Generally causes fewer side effects than NSAIDs, but can cause liver damage if taken in large doses or with alcohol.</p>
+                            </div>
+                            <div class="drug-type">
+                                <h4>NSAIDs (Nonsteroidal Anti-inflammatory Drugs)</h4>
+                                <p><strong>Examples:</strong> Ibuprofen, Naproxen, Aspirin</p>
+                                <p><strong>Uses:</strong> Reduces pain, inflammation, and fever.</p>
+                                <p><strong>How it works:</strong> Blocks certain chemicals that cause inflammation and pain.</p>
+                                <p><strong>Considerations:</strong> May cause stomach irritation, ulcers, or bleeding, especially with long-term use. Not recommended for people with certain conditions like kidney disease or heart failure.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="drug-category" id="cold-cough">
+                    <div class="category-icon">
+                        <i class="fas fa-lungs"></i>
+                    </div>
+                    <div class="category-content">
+                        <h3>Cold and Cough Medications</h3>
+                        <p>These medications help relieve symptoms of the common cold, flu, and allergies.</p>
+                        <div class="drug-types">
+                            <div class="drug-type">
+                                <h4>Decongestants</h4>
+                                <p><strong>Examples:</strong> Pseudoephedrine, Phenylephrine</p>
+                                <p><strong>Uses:</strong> Relieves nasal and sinus congestion.</p>
+                                <p><strong>How it works:</strong> Narrows blood vessels in nasal passages, reducing swelling and congestion.</p>
+                                <p><strong>Considerations:</strong> May increase blood pressure and heart rate. Not recommended for people with heart disease, high blood pressure, or thyroid problems.</p>
+                            </div>
+                            <div class="drug-type">
+                                <h4>Expectorants</h4>
+                                <p><strong>Examples:</strong> Guaifenesin</p>
+                                <p><strong>Uses:</strong> Helps loosen mucus in the lungs.</p>
+                                <p><strong>How it works:</strong> Increases the water content of mucus, making it easier to cough up.</p>
+                                <p><strong>Considerations:</strong> Generally safe when used as directed.</p>
+                            </div>
+                            <div class="drug-type">
+                                <h4>Cough Suppressants (Antitussives)</h4>
+                                <p><strong>Examples:</strong> Dextromethorphan</p>
+                                <p><strong>Uses:</strong> Suppresses the urge to cough.</p>
+                                <p><strong>How it works:</strong> Acts on the cough center in the brain to reduce coughing.</p>
+                                <p><strong>Considerations:</strong> Should not be used for productive coughs (coughs that produce phlegm).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="drug-category" id="allergy">
+                    <div class="category-icon">
+                        <i class="fas fa-wind"></i>
+                    </div>
+                    <div class="category-content">
+                        <h3>Allergy Medications</h3>
+                        <p>These medications help relieve allergy symptoms such as sneezing, itching, watery eyes, and runny nose.</p>
+                        <div class="drug-types">
+                            <div class="drug-type">
+                                <h4>Antihistamines</h4>
+                                <p><strong>Examples:</strong> Cetirizine, Loratadine, Diphenhydramine</p>
+                                <p><strong>Uses:</strong> Relieves allergy symptoms like sneezing, itching, and runny nose.</p>
+                                <p><strong>How it works:</strong> Blocks the action of histamine, a substance that causes allergy symptoms.</p>
+                                <p><strong>Considerations:</strong> First-generation antihistamines (like Diphenhydramine) can cause drowsiness. Second-generation antihistamines (like Cetirizine and Loratadine) are less likely to cause drowsiness.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="drug-category" id="digestive">
+                    <div class="category-icon">
+                        <i class="fa-solid fa-notes-medical"></i>
+                    </div>
+                    <div class="category-content">
+                        <h3>Digestive Health Medications</h3>
+                        <p>These medications help relieve digestive issues such as heartburn, acid reflux, indigestion, and upset stomach.</p>
+                        <div class="drug-types">
+                            <div class="drug-type">
+                                <h4>Antacids</h4>
+                                <p><strong>Examples:</strong> Calcium Carbonate, Aluminum Hydroxide, Magnesium Hydroxide</p>
+                                <p><strong>Uses:</strong> Neutralizes stomach acid to relieve heartburn, acid indigestion, and upset stomach.</p>
+                                <p><strong>How it works:</strong> Neutralizes excess stomach acid.</p>
+                                <p><strong>Considerations:</strong> May cause constipation or diarrhea depending on the ingredients.</p>
+                            </div>
+                            <div class="drug-type">
+                                <h4>H2 Blockers</h4>
+                                <p><strong>Examples:</strong> Famotidine, Ranitidine</p>
+                                <p><strong>Uses:</strong> Reduces acid production to prevent and relieve heartburn and acid reflux.</p>
+                                <p><strong>How it works:</strong> Blocks histamine receptors in the stomach, reducing acid production.</p>
+                                <p><strong>Considerations:</strong> Takes longer to work than antacids but provides longer relief.</p>
+                            </div>
+                            <div class="drug-type">
+                                <h4>Proton Pump Inhibitors (PPIs)</h4>
+                                <p><strong>Examples:</strong> Omeprazole, Lansoprazole</p>
+                                <p><strong>Uses:</strong> Reduces acid production to treat frequent heartburn and acid reflux.</p>
+                                <p><strong>How it works:</strong> Blocks the enzyme system that produces stomach acid.</p>
+                                <p><strong>Considerations:</strong> Should not be used for more than 14 days without consulting a healthcare professional.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="drug-category" id="sleep-aids">
+                    <div class="category-icon">
+                        <i class="fas fa-moon"></i>
+                    </div>
+                    <div class="category-content">
+                        <h3>Sleep Aids</h3>
+                        <p>These medications help with occasional sleeplessness or insomnia.</p>
+                        <div class="drug-types">
+                            <div class="drug-type">
+                                <h4>Diphenhydramine and Doxylamine</h4>
+                                <p><strong>Uses:</strong> Helps with occasional sleeplessness.</p>
+                                <p><strong>How it works:</strong> Antihistamines that cause drowsiness as a side effect.</p>
+                                <p><strong>Considerations:</strong> Can cause daytime drowsiness, dry mouth, and blurred vision. Not recommended for long-term use.</p>
+                            </div>
+                            <div class="drug-type">
+                                <h4>Melatonin</h4>
+                                <p><strong>Uses:</strong> Helps regulate sleep-wake cycles.</p>
+                                <p><strong>How it works:</strong> Synthetic version of a hormone naturally produced by the body that regulates sleep.</p>
+                                <p><strong>Considerations:</strong> Generally considered safe for short-term use. May interact with certain medications.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="drug-guide-tips">
+                <h3>General Tips for OTC Medication Use</h3>
+                <ul>
+                    <li>Always read and follow the label instructions carefully.</li>
+                    <li>Do not exceed the recommended dosage.</li>
+                    <li>Be aware of potential drug interactions if you are taking multiple medications.</li>
+                    <li>Check with a healthcare professional before taking OTC medications if you are pregnant, breastfeeding, have chronic health conditions, or are taking prescription medications.</li>
+                    <li>Keep all medications out of reach of children.</li>
+                    <li>Do not use expired medications.</li>
+                    <li>If symptoms persist or worsen, consult a healthcare professional.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="disclaimer">
+        <div class="container">
+            <h2>Important Notice</h2>
+            <p>The information provided on this website is for general informational purposes only and does not replace professional medical advice. Always consult with a healthcare professional before taking any medication, especially if you have existing health conditions or are taking other medications.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PharmaQuick</h3>
+                    <p>Your trusted guide for over-the-counter medicines.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="health-tips.html">Health Tips</a></li>
+                        <li><a href="drug-guide.html">Drug Guide</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Shop</h3>
+                    <ul>
+                        <li><a href="products.html?category=fever">Fever Relief</a></li>
+                        <li><a href="products.html?category=cough-cold">Cough & Cold</a></li>
+                        <li><a href="products.html?category=pain">Pain Relief</a></li>
+                        <li><a href="cart.html">Your Cart</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>University of Caloocan City<br>Congressional Rd Ext, Barangay 171<br>Caloocan, Metro Manila</p>
+                    <p>Email: info@pharmaquick.com</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 PharmaQuick. All rights reserved. Developed by Attila P. Sabiniano</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="script.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PharmaQuick - OTC Medicine Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo1.png" alt="PharmaQuick Logo" class="site-logo">
+                <div class="logo-text">
+                    <h1>PharmaQuick</h1>
+                    <p>Your OTC Medicine Guide</p>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="health-tips.html">Health Tips</a></li>
+                    <li><a href="drug-guide.html">Drug Guide</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <a href="cart.html" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </a>
+                <a href="account.html" class="user-icon">
+                    <i class="fas fa-user"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2 style="color: white;">Find the Right OTC Medicine for Your Needs</h2>
+                <p>Browse our comprehensive collection of over-the-counter medicines with detailed usage guidelines and dosage recommendations.</p>
+                <div class="hero-buttons">
+                    <a href="products.html" class="btn">Explore Products</a>
+                    <a href="health-tips.html" class="btn btn-secondary">Health Tips</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="categories">
+        <div class="container">
+            <h2>Browse by Category</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <i class="fas fa-thermometer-half"></i>
+                    <h3>Fever Relief</h3>
+                    <p>Medications to reduce fever and provide comfort</p>
+                    <a href="products.html?category=fever" class="btn-small">View Products</a>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-head-side-cough"></i>
+                    <h3>Cough & Cold</h3>
+                    <p>Remedies for cough, congestion, and cold symptoms</p>
+                    <a href="products.html?category=cough-cold" class="btn-small">View Products</a>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-pills"></i>
+                    <h3>Pain Relief</h3>
+                    <p>Solutions for headaches, body aches, and general pain</p>
+                    <a href="products.html?category=pain" class="btn-small">View Products</a>
+                </div>
+                <div class="category-card">
+                    <i class="fa-solid fa-notes-medical"></i>
+                    <h3>Digestive Health</h3>
+                    <p>Products for indigestion, heartburn, and stomach discomfort</p>
+                    <a href="products.html?category=digestive" class="btn-small">View Products</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-products">
+        <div class="container">
+            <h2>Featured Products</h2>
+            <div class="product-grid">
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="paracetamol-500mg-tablet.jpg" alt="Paracetamol">
+                    </div>
+                    <div class="product-info">
+                        <h3>Paracetamol 500mg Tablets</h3>
+                        <p class="category">Fever Relief, Pain Relief</p>
+                        <p class="price">₱85.00</p>
+                        <div class="product-actions">
+                            <a href="paracetamol-500mg-details.html" class="btn-small">View Details</a>
+                            <button class="btn-small btn-cart" onclick="addToCart(11)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="Dextromethorphan.avif" alt="Robitussin-DM">
+                    </div>
+                    <div class="product-info">
+                        <h3>Robitussin-DM</h3>
+                        <p class="category">Cough & Cold</p>
+                        <p class="price">₱137.00</p>
+                        <div class="product-actions">
+                            <a href="robitussin-dm-details.html" class="btn-small">View Details</a>
+                            <button class="btn-small btn-cart" onclick="addToCart(2)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="Emergency Kit.avif" alt="Emergency Kit">
+                    </div>
+                    <div class="product-info">
+                        <h3>Emergency Kit</h3>
+                        <p class="category">First Aid</p>
+                        <p class="price">₱850.00</p>
+                        <div class="product-actions">
+                            <a href="emergency-kit-details.html" class="btn-small">View Details</a>
+                            <button class="btn-small btn-cart" onclick="addToCart(4)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+    </section>
+
+    <div class="view-all-container">
+        <a href="products.html" class="btn">View All Products</a>
+    </div>
+</div>
+
+    <section class="health-tips-preview">
+        <div class="container">
+            <div class="section-header">
+                <h2>Health Tips & Advice</h2>
+                <a href="health-tips.html" class="view-all">View All Tips</a>
+            </div>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <div class="tip-image">
+                        <img src="hydration-tip.jpg" alt="Stay Hydrated">
+                    </div>
+                    <div class="tip-content">
+                        <h3>The Importance of Staying Hydrated</h3>
+                        <p class="tip-date">November 15, 2025</p>
+                        <p class="tip-excerpt">Drinking enough water daily is essential for maintaining good health. Learn how proper hydration affects your body and mind.</p>
+                        <a href="health-tips.html?id=1" class="read-more">Read More</a>
+                    </div>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-image">
+                        <img src="sleep.jpg" alt="Better Sleep">
+                    </div>
+                    <div class="tip-content">
+                        <h3>Tips for Better Sleep Quality</h3>
+                        <p class="tip-date">November 10, 2025</p>
+                        <p class="tip-excerpt">Quality sleep is crucial for your health. Discover practical tips to improve your sleep habits and wake up refreshed.</p>
+                        <a href="health-tips.html?id=2" class="read-more">Read More</a>
+                    </div>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-image">
+                        <img src="immune.jpg" alt="Immune System">
+                    </div>
+                    <div class="tip-content">
+                        <h3>Boosting Your Immune System Naturally</h3>
+                        <p class="tip-date">November 5, 2025</p>
+                        <p class="tip-excerpt">Learn about natural ways to strengthen your immune system and protect yourself from common illnesses.</p>
+                        <a href="health-tips.html?id=3" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="special-offers">
+        <div class="container">
+            <h2>Special Offers</h2>
+            <div class="offers-grid">
+                <div class="offer-card">
+                    <div class="offer-content">
+                        <h3>First Purchase Discount</h3>
+                        <p>Get 10% off on your first order with code: <strong>FIRST10</strong></p>
+                        <a href="products.html" class="btn-small">Shop Now</a>
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-content">
+                        <h3>Free Delivery</h3>
+                        <p>Free shipping on orders over ₱500</p>
+                        <a href="products.html" class="btn-small">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="disclaimer">
+        <div class="container">
+            <h2>Important Notice</h2>
+            <p>The information provided on this website is for general informational and educational purposes only and does not replace professional medical advice. This website is created for educational purposes and the information displayed may not be accurate. Always consult with a healthcare professional before taking any medication, especially if you have existing health conditions or are taking other medications.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PharmaQuick</h3>
+                    <p>Your trusted guide for over-the-counter medicines.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="health-tips.html">Health Tips</a></li>
+                        <li><a href="drug-guide.html">Drug Guide</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Shop</h3>
+                    <ul>
+                        <li><a href="products.html?category=fever">Fever Relief</a></li>
+                        <li><a href="products.html?category=cough-cold">Cough & Cold</a></li>
+                        <li><a href="products.html?category=pain">Pain Relief</a></li>
+                        <li><a href="cart.html">Your Cart</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>University of Caloocan City<br>Congressional Rd Ext, Barangay 171<br>Caloocan, Metro Manila</p>
+                    <p>Email: info@pharmaquick.com</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 PharmaQuick. All rights reserved. Developed by Attila P. Sabiniano</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>

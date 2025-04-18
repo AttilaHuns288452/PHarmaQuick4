@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - PharmaQuick</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="logo">
+            <img src="logo1.png" alt="PharmaQuick Logo" class="site-logo">
+            <div class="logo-text">
+                <h1>PharmaQuick</h1>
+                <p>Your OTC Medicine Guide</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="health-tips.html">Health Tips</a></li>
+                <li><a href="drug-guide.html">Drug Guide</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-icons">
+            <a href="cart.html" class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count" id="cartCount">0</span>
+            </a>
+            <a href="login.html" class="user-icon">
+                <i class="fas fa-user"></i>
+            </a>
+        </div>
+    </div>
+</header>
+
+
+    <section class="product-details">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> &gt; <a href="products.html">Products</a> &gt; Paracetamol
+            </div>
+            
+            <div class="product-detail-content">
+                <div class="product-image-large">
+                    <img src="Paracetamol_120__04876.1607584025[1].webp" alt="Paracetamol">
+                </div>
+                
+                <div class="product-info-detailed">
+                    <h2>RM PARACETAMOL 120 MG / 5 ML SYRUP</h2>
+                    <p class="category">Fever Relief, Pain Relief</p>
+                    
+                    <div class="product-price">
+                        <span class="price">₱45.00</span>
+                        <span class="original-price">₱50.00</span>
+                    </div>
+                    
+                    <div class="product-section">
+                        <p>Effective for reducing fever and relieving mild to moderate pain. Commonly used for headaches, toothaches, and minor aches and pains.</p>
+                    </div>
+                    
+                    <div class="product-quantity">
+                        <label for="quantity">Quantity:</label>
+                        <div class="quantity-selector">
+                            <button class="quantity-btn decrease">-</button>
+                            <input type="number" id="quantity" value="1" min="1" max="99" class="quantity-input">
+                            <button class="quantity-btn increase">+</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-actions">
+                        <button class="btn" id="addToCartBtn">Add to Cart</button>
+                        <button class="btn btn-secondary" id="buyNowBtn" style="background-color: var(--success-color); border: none;">Buy Now</button>
+                    </div>
+                    
+                    <div class="product-section">
+                        <h3>Description</h3>
+                        <p>Paracetamol is a widely used over-the-counter pain reliever (analgesic) and fever reducer (antipyretic). It's commonly used to treat many conditions including headaches, body aches, toothaches, and fevers.</p>
+                    </div>
+                    
+                    <div class="product-section">
+                        <h3>Dosage</h3>
+                        <p>Dosage & Administration
+
+                            1 to 5 years old: 5 mL (1 teaspoonful) to 10 mL (2 teaspoonfuls); 
+                            6 to 12 years old: 10 mL  (2 teaspoonfuls) to 20 mL (4 teaspoonfuls) to be taken 3 to 4 times a day. Or as prescribed by the physician.</p>
+                    </div>
+                    
+                    <div class="product-section">
+                        <h3>Precautions</h3>
+                        <ul>
+                            <li>Do not use with other products containing paracetamol.</li>
+                            <li>Do not exceed the recommended dose.</li>
+                            <li>Consult a doctor if symptoms persist for more than 3 days.</li>
+                            <li>Not recommended for children under 12 years without medical advice.</li>
+                            <li>Avoid alcohol consumption while taking this medication.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="related-products">
+        <div class="container">
+            <h2>Related Products</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="Dextromethorphan.avif" alt="Ibuprofen">
+                    </div>
+                    <div class="product-info">
+                        <h3>Robitussin-DM</h3>
+                        <p class="category">Cough & Cold</p>
+                        <p class="description">Temporarily relieves cough due to minor throat & bronchial irritation as may occur w/ a cold.
+                            Expectorant action to help loosen phlegm & thin bronchial secretions to make cough more productive.
+                            Helps relieve chest congestion.</p>
+                        <div class="product-price">
+                            <span class="price">₱137.00</span>
+                        </div>
+                        <div class="product-actions">
+                            <a href="product-details.html?id=2" class="btn-small">View Details</a>
+                            <button class="btn-small btn-cart" onclick="addToCart(2)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="paracetamol-500mg-tablet.jpg" alt="Cough Syrup">
+                    </div>
+                    <div class="product-info">
+                        <h3>Paracetamol Tablet</h3>
+                        <p class="category">Cough & Cold</p>
+                        <p class="description">Relieves cough and soothes throat irritation. Available in different formulations.</p>
+                        <div class="product-price">
+                            <span class="price">₱85.00</span>
+                        </div>
+                        <div class="product-actions">
+                            <a href="paracetamol-500mg-details.html" class="btn-small">View Details</a>
+                            <button class="btn-small btn-cart" onclick="addToCart(11)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="disclaimer">
+        <div class="container">
+            <h2>Important Notice</h2>
+            <p>The information provided on this website is for general informational purposes only and does not replace professional medical advice. Always consult with a healthcare professional before taking any medication, especially if you have existing health conditions or are taking other medications.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PharmaQuick</h3>
+                    <p>Your trusted guide for over-the-counter medicines.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="health-tips.html">Health Tips</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Shop</h3>
+                    <ul>
+                        <li><a href="products.html?category=fever">Fever Relief</a></li>
+                        <li><a href="products.html?category=cough-cold">Cough & Cold</a></li>
+                        <li><a href="products.html?category=pain">Pain Relief</a></li>
+                        <li><a href="cart.html">Your Cart</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>University of Caloocan City<br>Congressional Rd Ext, Barangay 171<br>Caloocan, Metro Manila</p>
+                    <p>Email: info@pharmaquick.com</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 PharmaQuick. All rights reserved. Developed by Attila P. Sabiniano</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+    <script src="cart.js"></script>
+    <script>
+     
+        const quantityInput = document.getElementById('quantity');
+        const decreaseBtn = document.querySelector('.decrease');
+        const increaseBtn = document.querySelector('.increase');
+        
+        decreaseBtn.addEventListener('click', function() {
+            let currentValue = parseInt(quantityInput.value);
+            if (currentValue > 1) {
+                quantityInput.value = currentValue - 1;
+            }
+        });
+        
+        increaseBtn.addEventListener('click', function() {
+            let currentValue = parseInt(quantityInput.value);
+            if (currentValue < 99) {
+                quantityInput.value = currentValue + 1;
+            }
+        });
+        
+
+        document.getElementById('addToCartBtn').addEventListener('click', function() {
+            const quantity = parseInt(document.getElementById('quantity').value);
+   
+            const productId = 1; 
+            
+
+            for (let i = 0; i < quantity; i++) {
+                addToCart(productId);
+            }
+            
+       
+            alert(`Added ${quantity} Paracetamol to your cart!`);
+        });
+       
+        document.getElementById('buyNowBtn').addEventListener('click', function() {
+            const quantity = parseInt(document.getElementById('quantity').value);
+  
+            const productId = 1; 
+            
+  
+            for (let i = 0; i < quantity; i++) {
+                addToCart(productId);
+            }
+            
+
+            window.location.href = 'cart.html';
+        });
+    </script>
+</body>
+</html>

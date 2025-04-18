@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paracetamol 500mg - PharmaQuick</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="logo">
+            <img src="logo1.png" alt="PharmaQuick Logo" class="site-logo">
+            <div class="logo-text">
+                <h1>PharmaQuick</h1>
+                <p>Your OTC Medicine Guide</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="health-tips.html">Health Tips</a></li>
+                <li><a href="drug-guide.html">Drug Guide</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-icons">
+            <a href="cart.html" class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count" id="cartCount">0</span>
+            </a>
+            <a href="login.html" class="user-icon">
+                <i class="fas fa-user"></i>
+            </a>
+        </div>
+    </div>
+</header>
+
+<section class="product-details">
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> &gt; <a href="products.html">Products</a> &gt; Paracetamol 500mg
+        </div>
+        
+        <div class="product-detail-content">
+            <div class="product-image-large">
+                <img src="paracetamol-500mg-tablet.jpg "alt="Paracetamol 500mg">
+            </div>
+            
+            <div class="product-info-detailed">
+                <h2>Paracetamol 500mg Tablets</h2>
+                <p class="category">Pain Relief & Fever Reducer</p>
+                
+                <div class="product-price">
+                    <span class="price">₱85.00</span>
+                    <span class="original-price">₱100.00</span>
+                </div>
+                
+                <div class="product-section">
+                    <p>Paracetamol (also known as Acetaminophen) is a widely used over-the-counter pain reliever and fever reducer. These 500mg tablets provide effective relief from mild to moderate pain and help reduce high temperature.</p>
+                </div>
+                
+                <div class="product-quantity">
+                    <label for="quantity">Quantity:</label>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn decrease">-</button>
+                        <input type="number" id="quantity" value="1" min="1" max="99" class="quantity-input">
+                        <button class="quantity-btn increase">+</button>
+                    </div>
+                </div>
+                
+                <div class="product-actions">
+                    <button class="btn" id="addToCartBtn">Add to Cart</button>
+                    <button class="btn btn-secondary" id="buyNowBtn" style="background-color: var(--success-color); border: none;">Buy Now</button>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Description</h3>
+                    <p>Paracetamol is one of the most commonly used medications worldwide for pain management and fever reduction. It works by affecting chemicals in the body that cause pain and fever. Unlike NSAIDs (such as ibuprofen or aspirin), paracetamol doesn't reduce inflammation significantly but has fewer gastrointestinal side effects, making it suitable for a wider range of people.</p>
+                    <p>Our Paracetamol 500mg tablets are easy to swallow and provide fast-acting relief for various types of pain, including headaches, toothaches, backaches, menstrual pain, muscle aches, and pain associated with colds and flu. They are also effective at reducing fever.</p>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Active Ingredient</h3>
+                    <p>Each tablet contains 500mg of Paracetamol (Acetaminophen).</p>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Uses</h3>
+                    <ul>
+                        <li>Temporarily relieves mild to moderate pain due to:
+                            <ul>
+                                <li>Headaches and migraines</li>
+                                <li>Toothache</li>
+                                <li>Backache</li>
+                                <li>Menstrual cramps</li>
+                                <li>Muscular aches</li>
+                                <li>Minor arthritis pain</li>
+                                <li>Cold and flu symptoms</li>
+                                <li>Sore throat</li>
+                            </ul>
+                        </li>
+                        <li>Reduces fever</li>
+                    </ul>
+                </div>
+                
+                <div class="product-section">
+                    <h3>How It Works</h3>
+                    <p>Paracetamol works by:</p>
+                    <ul>
+                        <li>Inhibiting the production of prostaglandins in the central nervous system (brain and spinal cord)</li>
+                        <li>Affecting the hypothalamus (the part of the brain that regulates temperature) to help reduce fever</li>
+                        <li>Blocking pain signals to the brain</li>
+                        <li>Unlike NSAIDs, paracetamol has minimal effect on prostaglandins in peripheral tissues, which is why it doesn't reduce inflammation significantly</li>
+                    </ul>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Dosage</h3>
+                    <p><strong>Adults and children 12 years and over:</strong></p>
+                    <ul>
+                        <li>1-2 tablets (500-1000mg) every 4-6 hours as needed</li>
+                        <li>Do not take more than 8 tablets (4000mg) in 24 hours</li>
+                        <li>Do not take for more than 10 days for pain (5 days for fever) unless directed by a doctor</li>
+                        <li>Take with a full glass of water</li>
+                    </ul>
+                    
+                    <p><strong>Children 6-11 years:</strong></p>
+                    <ul>
+                        <li>½ tablet (250mg) every 4-6 hours as needed</li>
+                        <li>Do not give more than 4 doses (1000mg) in 24 hours</li>
+                        <li>Do not give for more than 5 days unless directed by a doctor</li>
+                    </ul>
+                    
+                    <p><strong>Children under 6 years:</strong></p>
+                    <ul>
+                        <li>Not recommended without medical supervision</li>
+                        <li>Use children's paracetamol formulations specifically designed for this age group</li>
+                    </ul>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Precautions</h3>
+                    <p><strong>Do not use if you:</strong></p>
+                    <ul>
+                        <li>Are allergic to paracetamol or any ingredients in this product</li>
+                        <li>Have severe liver disease</li>
+                        <li>Consume three or more alcoholic drinks every day (increased risk of liver damage)</li>
+                    </ul>
+                    
+                    <p><strong>Ask a doctor before use if you have:</strong></p>
+                    <ul>
+                        <li>Liver disease</li>
+                        <li>Kidney disease</li>
+                        <li>Phenylketonuria (PKU) - some formulations may contain aspartame</li>
+                        <li>A history of alcohol abuse</li>
+                        <li>A severe infection, are severely malnourished, or are severely dehydrated</li>
+                    </ul>
+                    
+                    <p><strong>Ask a doctor or pharmacist before use if you are:</strong></p>
+                    <ul>
+                        <li>Taking the blood-thinning drug warfarin</li>
+                        <li>Taking other medications containing paracetamol (to avoid overdose)</li>
+                        <li>Taking other medications that might affect liver function</li>
+                        <li>Pregnant or breastfeeding</li>
+                    </ul>
+                    
+                    <p><strong>Stop use and ask a doctor if:</strong></p>
+                    <ul>
+                        <li>Pain gets worse or lasts for more than 10 days</li>
+                        <li>Fever gets worse or lasts for more than 3 days</li>
+                        <li>Redness or swelling is present</li>
+                        <li>New symptoms occur</li>
+                        <li>You experience signs of liver problems (such as dark urine, pale stools, yellowing of skin/eyes, stomach pain, unusual tiredness)</li>
+                    </ul>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Possible Side Effects</h3>
+                    <p>When taken as directed, paracetamol rarely causes side effects. However, possible side effects may include:</p>
+                    
+                    <p><strong>Rare side effects:</strong></p>
+                    <ul>
+                        <li>Allergic reactions (rash, itching, swelling)</li>
+                        <li>Nausea or vomiting</li>
+                        <li>Stomach pain</li>
+                    </ul>
+                    
+                    <p><strong>Very rare side effects:</strong></p>
+                    <ul>
+                        <li>Blood disorders (unusual bleeding or bruising)</li>
+                        <li>Skin reactions (severe rash, peeling)</li>
+                    </ul>
+                    
+                    <p><strong>Overdose warning:</strong></p>
+                    <p>Taking more than the recommended dose can cause liver damage, which can be serious and potentially fatal. Symptoms of overdose may include:</p>
+                    <ul>
+                        <li>Nausea and vomiting</li>
+                        <li>Loss of appetite</li>
+                        <li>Stomach pain</li>
+                        <li>Sweating</li>
+                        <li>Confusion</li>
+                        <li>Yellowing of the skin or whites of the eyes (jaundice)</li>
+                    </ul>
+                    <p>If you suspect an overdose, seek medical attention immediately, even if there are no symptoms, as liver damage may not be immediately apparent.</p>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Storage</h3>
+                    <ul>
+                        <li>Store at room temperature (20-25°C or 68-77°F)</li>
+                        <li>Keep away from moisture and heat</li>
+                        <li>Keep the container tightly closed</li>
+                        <li>Keep out of reach of children</li>
+                    </ul>
+                </div>
+                
+                <div class="product-section">
+                    <h3>Important Information</h3>
+                    <ul>
+                        <li><strong>Alcohol warning:</strong> If you consume 3 or more alcoholic drinks every day, ask your doctor whether you should take paracetamol or other pain relievers/fever reducers. Paracetamol may cause liver damage.</li>
+                        <li><strong>Avoid multiple products:</strong> Do not use with other products containing paracetamol, as this may lead to overdose.</li>
+                        <li><strong>Proper dosing:</strong> Always follow the recommended dosage. Taking more than directed can cause liver damage.</li>
+                        <li><strong>Medical attention:</strong> If pain or fever persists or worsens, consult a healthcare professional.</li>
+                    </ul>
+                </div>
+                
+                <div class="product-section">
+                    <h3>When to Seek Medical Attention</h3>
+                    <p>While paracetamol is generally safe when used as directed, certain situations require prompt medical attention:</p>
+                    <ul>
+                        <li>If you suspect you've taken too much paracetamol (even if you feel well)</li>
+                        <li>If fever persists for more than 3 days</li>
+                        <li>If pain persists for more than 10 days</li>
+                        <li>If you experience severe or unusual symptoms while taking paracetamol</li>
+                        <li>If you notice signs of an allergic reaction (rash, itching, swelling, severe dizziness, difficulty breathing)</li>
+                        <li>If you notice signs of liver problems (yellowing of skin/eyes, dark urine, pale stools, unusual tiredness, stomach pain)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="related-products">
+    <div class="container">
+        <h2>Related Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="Paracetamol_120__04876.1607584025[1].webp" alt="Ibuprofen">
+                </div>
+                <div class="product-info">
+                    <h3>RM PARACETAMOL 120 MG / 5 ML SYRUP</h3>
+                    <p class="category">Fever Relief, Pain Relief</p>
+                    <p class="description">Effective for reducing fever and relieving mild to moderate pain.</p>
+                    <div class="product-price">
+                        <span class="price">₱45.00</span>
+                    </div>
+                    <div class="product-actions">
+                        <a href="product-details.html" class="btn-small">View Details</a>
+                        <button class="btn-small btn-cart" onclick="addToCart(1)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="Dextromethorphan.avif" alt="Aspirin">
+                </div>
+                <div class="product-info">
+                    <h3>Aspirin</h3>
+                    <p class="category">Pain Relief & Anti-inflammatory</p>
+                    <p class="description">Temporarily relieves cough due to minor throat & bronchial irritation as may occur w/ a cold.</p>
+                    <div class="product-price">
+                        <span class="price">₱137.00</span>
+                    </div>
+                    <div class="product-actions">
+                        <a href="robitussin-dm-details.html" class="btn-small">View Details</a>
+                        <button class="btn-small btn-cart" onclick="addToCart(2)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="disclaimer">
+    <div class="container">
+        <h2>Important Notice</h2>
+        <p>The information provided on this website is for general informational purposes only and does not replace professional medical advice. Always consult with a healthcare professional before taking any medication, especially if you have existing health conditions or are taking other medications.</p>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>PharmaQuick</h3>
+                <p>Your trusted guide for over-the-counter medicines.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="health-tips.html">Health Tips</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="products.html?category=fever">Fever Relief</a></li>
+                    <li><a href="products.html?category=cough-cold">Cough & Cold</a></li>
+                    <li><a href="products.html?category=pain">Pain Relief</a></li>
+                    <li><a href="cart.html">Your Cart</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>University of Caloocan City<br>Congressional Rd Ext, Barangay 171<br>Caloocan, Metro Manila</p>
+                <p>Email: info@pharmaquick.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 PharmaQuick. All rights reserved. Developed by Attila P. Sabiniano</p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="cart.js"></script>
+<script>
+ 
+    const quantityInput = document.getElementById('quantity');
+    const decreaseBtn = document.querySelector('.decrease');
+    const increaseBtn = document.querySelector('.increase');
+    
+    decreaseBtn.addEventListener('click', function() {
+        let currentValue = parseInt(quantityInput.value);
+        if (currentValue > 1) {
+            quantityInput.value = currentValue - 1;
+        }
+    });
+    
+    increaseBtn.addEventListener('click', function() {
+        let currentValue = parseInt(quantityInput.value);
+        if (currentValue < 99) {
+            quantityInput.value = currentValue + 1;
+        }
+    });
+    
+
+    document.getElementById('addToCartBtn').addEventListener('click', function() {
+        const quantity = parseInt(document.getElementById('quantity').value);
+        const productId = 11; 
+        
+
+        for (let i = 0; i < quantity; i++) {
+            addToCart(productId);
+        }
+        
+ 
+        alert(`Added ${quantity} Paracetamol 500mg to your cart!`);
+    });
+    
+    document.getElementById('buyNowBtn').addEventListener('click', function() {
+        const quantity = parseInt(document.getElementById('quantity').value);
+        const productId = 11; 
+        
+ 
+        for (let i = 0; i < quantity; i++) {
+            addToCart(productId);
+        }
+        
+
+        window.location.href = 'cart.html';
+    });
+</script>
+</body>
+</html>
