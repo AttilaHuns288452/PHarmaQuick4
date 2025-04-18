@@ -115,35 +115,47 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log("Cart.js loaded");
     
 
+    window.cartInitialized = false;
+    
+
+    if (window.cartInitialized) {
+        console.log("Cart already initialized, skipping");
+        return;
+    }
+    
     let cart = JSON.parse(localStorage.getItem('pharmaquickCart')) || [];
     
 
-
-    const addToCartButtons = document.querySelectorAll('.btn-cart');
-    console.log("Found add to cart buttons:", addToCartButtons.length);
+    setupAddToCartButtons();
     
-    if (addToCartButtons.length > 0) {
-        addToCartButtons.forEach(button => {
- 
-            button.removeEventListener('click', handleAddToCart);
+    function setupAddToCartButtons() {
+        const addToCartButtons = document.querySelectorAll('.btn-cart');
+        console.log("Found add to cart buttons:", addToCartButtons.length);
+        
+        if (addToCartButtons.length > 0) {
+            addToCartButtons.forEach(button => {
 
-            button.addEventListener('click', handleAddToCart);
-            
+                if (button.hasAttribute('onclick')) {
+                    const onclickAttr = button.getAttribute('onclick');
+                    const match = onclickAttr.match(/\d+/);
+                    if (match) {
+                        const productId = parseInt(match[0]);
+                        button.setAttribute('data-product-id', productId);
+                    }
+                    
 
-            if (button.hasAttribute('onclick')) {
- 
-                const onclickAttr = button.getAttribute('onclick');
-                const match = onclickAttr.match(/\d+/);
-                if (match) {
-                    const productId = parseInt(match[0]);
-
-                    button.setAttribute('data-product-id', productId);
+                    button.removeAttribute('onclick');
                 }
+                
 
-                button.removeAttribute('onclick');
-            }
-        });
+                button.removeEventListener('click', handleAddToCart);
+                button.addEventListener('click', handleAddToCart);
+            });
+        }
     }
+    
+
+    window.cartInitialized = true;
     
     function handleAddToCart(e) {
         e.preventDefault();
