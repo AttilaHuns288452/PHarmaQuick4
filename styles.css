@@ -146,7 +146,9 @@ nav ul li a.active {
     align-items: center;
     justify-content: center;
 }
-
+.btn-small btn-cart{
+    font-color: white;
+}
 
 @media (max-width: 992px) {
     header .container {
